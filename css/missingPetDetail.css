@@ -1,0 +1,107 @@
+main {
+  width: min(90%, 100%);
+  margin-inline: auto;
+  /* background-color: black; */
+  margin-top: 2rem;
+}
+main h3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.missingHeader {
+  margin-bottom: 1rem;
+}
+.missingHeader h2 {
+  color: var(--alert);
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.missingHeader > span {
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 600;
+}
+.missingPetContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  position: relative;
+}
+.pet {
+  padding-top: 1rem;
+}
+.dateLoc > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--card-color);
+  padding: 1rem;
+  border-radius: 0.25em;
+  border: 1px solid lightgray;
+  font-weight: 600;
+}
+.dateLoc,
+.petInfo {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid lightgray;
+}
+.petInfo,
+.petDesc {
+  padding-top: 1rem;
+}
+.petInfo > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-inline: 1rem;
+}
+.petInfo > ul > li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* justify-content: space-between; */
+}
+.petInfo .primary {
+  font-weight: 600;
+}
+.petDesc > p {
+  text-align: justify;
+}
+.contact {
+  background-color: var(--card-color);
+  border: 1px solid lightgray;
+  border-radius: 0.25em;
+  padding: 1rem;
+}
+.contact > div {
+  margin-bottom: 1rem;
+}
+.contact > div span {
+  display: block;
+  margin-top: 0.5rem;
+}
+@media (max-width: 1024px) {
+  .missingPetContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 768px) {
+  .missingPetContainer {
+    grid-template-columns: 1fr;
+  }
+  .contact {
+    grid-column: span 1;
+  }
+  .image {
+    max-height: 550px;
+  }
+}
+@media (max-width: 475px) {
+  /* -- Navigation --*/
+  .image {
+    max-height: 350px;
+  }
+}

@@ -1,0 +1,20 @@
+$(document).ready(function (){
+   load_data()
+   function load_data(page){
+      $.ajax({
+         url: "./php/pagination_missing_pets.php",
+         method: "POST",
+         data: {page:page},
+         success: function(data){
+            $("#missing-pet-item-container").html(data);
+         }
+      })
+   }
+
+   $(document).on('click', '.pagination_link', function(){
+      var page = $(this).attr("id");
+      load_data(page);
+   });
+});
+
+

@@ -1,0 +1,231 @@
+/* body {
+  background-image: url("../assets/Missing-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}*/
+body::after {
+  content: " ";
+  position: absolute;
+  background-color: black;
+  opacity: 0.03;
+  top: -10rem !important;
+  inset: 0;
+  z-index: -1;
+}
+main {
+  position: relative;
+  background-color: var(--card-color);
+  width: min(95%, 600px);
+  margin-inline: auto;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 0.25em;
+  padding-inline: 5rem;
+  box-shadow: var(--box-shadow);
+}
+main > p,
+main > h4 {
+  margin-top: 0.5rem;
+}
+.header-img {
+  position: absolute;
+  border-radius: 50%;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid var(--card-color);
+  background-color: rgb(52, 189, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-img i {
+  font-size: 4rem;
+  color: white;
+}
+.primary-button {
+  background-color: var(--primary-orange);
+  color: var(--white-color);
+  font-weight: 700;
+}
+.primary-button:hover {
+  background-color: var(--secondary-orange);
+}
+.adoptCancel {
+  background-color: #e0e0e0;
+}
+.backBtn:hover,
+.adoptCancel:hover {
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+.header-info {
+  margin-top: 1.5rem;
+}
+.header-info > h3,
+.header-info > h4 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.header-info > div {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+.header-info > div > div {
+  display: flex;
+  gap: 0.5rem;
+}
+.header-info > h4 {
+  margin-top: 1rem;
+}
+
+.adoptProcess > div span,
+.header-info > div p,
+.transactionDetail p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+/* form  */
+.adoptProcessForm {
+  overflow: hidden;
+  position: relative;
+  /* min-height: max-content; */
+  display: block;
+  /* height: 700px; */
+}
+
+.current {
+  left: 0 !important;
+}
+
+/* First Form  */
+.adoptProcess {
+  width: 100%;
+  position: absolute;
+  margin-top: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  left: -200%;
+}
+.adoptProcess > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.adoptSecond {
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+.adoptSecond > div {
+  border-bottom: 1px solid lightgray;
+}
+.adoptThird {
+  position: relative;
+  height: 500px;
+  overflow: auto;
+  padding-bottom: 2rem;
+}
+.adoptFourth {
+  overflow: auto;
+  top: 0;
+  bottom: 0;
+}
+.hidden {
+  display: none;
+}
+.file {
+  padding: 0.25em 1em 0.25em 1em;
+  background-color: white;
+  border-radius: 0.25em;
+  border: 1px solid lightgray;
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.formButtons {
+  margin-top: 1rem;
+}
+.file:hover {
+  background-color: var(--secondary-blue);
+  color: white;
+}
+
+/* Success Page  */
+.successfulProcess {
+  max-width: 550px;
+  padding: 0!important;
+  padding-bottom: 2rem!important;
+}
+
+.adopt-receipt-header {
+  background-color: var(--primary-blue) !important;
+  color: white !important;
+  padding: 2rem !important;
+}
+.adopt-receipt-transacdet,
+.adopt-receipt-headerInf,
+.adopt-receipt-buttons {
+  padding-inline: 4rem !important;
+}
+.adoptSuccess > h4 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.adoptSuccess > div {
+  display: grid;
+  grid-gap: 1rem;
+}
+.adoptSuccess > div > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* border: 1px solid black; */
+}
+
+.schedule {
+  grid-gap: 0.25rem !important;
+}
+.schedule p {
+  font-size: 0.9rem;
+  margin: 0 !important;
+}
+.primary-orange {
+  color: var(--primary-orange);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem !important  ;
+}
+.formButtons a {
+  text-align: center;
+}
+.margin-s {
+  margin-top: 0.5rem;
+}
+@media (max-width: 475px) {
+  main {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  /* form {
+    min-height: 90vh;
+  } */
+}
+.invalid-feedback {
+  color: red;
+}

@@ -1,0 +1,215 @@
+@import url('./main.css');
+
+
+.adopt-log{
+   flex-direction: column;
+   /* justify-content: space-between; */
+   /* background-color: var(--primary-color); */
+   padding: 1% 2%;
+}
+
+.adopt-log .adopt-logs-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   /* background-color: aliceblue; */
+}
+
+.adopt-log .adopt-logs-header .title-text{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+   /* background-color: antiquewhite; */
+}
+
+.adopt-log .adopt-logs-header .title-text h1{
+   margin-right: 10px;
+}
+
+.adopt-log .adopt-logs-header .filter-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 148, 148); */
+   padding: .5% 0%;
+   border-radius: 6px;
+
+}
+
+.adopt-log .adopt-logs-header .filter-box .filter{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 119, 119); */
+   width: 60%;
+   height: 100%;
+}
+
+.adopt-log .adopt-logs-header .filter-box .filter .search{
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 60%;
+   height: 100%;
+   border: 1px solid var(--dark-color);
+   border-radius: 6px;
+   margin-right: 10px;
+   /* background-color:aquamarine; */
+}
+
+
+.adopt-log .adopt-logs-header .filter-box .filter .search .fa{
+   color: var(--secondary-text);
+   position: absolute;
+   margin-left: 2.5%;
+}
+
+.adopt-log .adopt-logs-header .filter-box .filter .search input[type="search"]{
+   width: 100%;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   padding-left: 40px;
+   border: none;
+   background: none;
+   border-radius: 6px;
+   /* margin-left: 10px; */
+}
+
+
+
+
+.adopt-log .adopt-logs-header .filter .sort-by{
+   display: flex;
+   align-items: center;
+   width: 40%;
+   height: 100%;
+   /* background-color: aqua; */
+}
+
+.adopt-log .adopt-logs-header .filter .sort-by p{
+   width: max-content;
+   margin-right: 10px;
+}
+
+
+.adopt-log .adopt-logs-header .filter .sort-by select{
+   width: max-content;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   border-radius: 6px;
+   border: 1px solid var(--dark-color);
+}
+
+
+
+
+
+
+
+
+
+.adopt-log-item-container{
+   /* background-color: rgb(192, 159, 159); */
+   width: 100%;
+   height: 100%;
+   margin-top: 10px
+}
+
+ .adopt-log-item-container table{
+   border-collapse: collapse;
+}
+
+ .adopt-log-item-container table thead{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.516); 
+   border-top: 1px solid rgba(0, 0, 0, 0.516);  
+}
+
+ .adopt-log-item-container table tr th{
+   padding: 5px;
+   text-transform: capitalize;
+   color: #000000;
+   /* background-color: var(--primary-color); */
+   font-size: 1em;
+   font-weight: 500;
+   text-align: left;
+   /* border: 1px solid black; */
+}
+
+ .adopt-log-item-container table tr .avatar{
+   text-align: center;
+}
+
+ .adopt-log-item-container table tr .avatar .adopt-log-avatar{
+   width: 30px;
+   height: 30px;
+   overflow: hidden;
+   border-radius: 50%;
+   margin: auto;
+}
+
+
+ .adopt-log-item-container table tr .avatar .adopt-log-avatar img{
+   width: 100%;
+   /* height: 100%; */
+}
+
+ .adopt-log-item-container table tr td{
+   /* text-align: ; */
+   padding: 5px;
+   /* background-color: #fff; */
+   border: 1px solid rgba(0, 0, 0, 0.153);
+   text-transform: capitalize;
+}
+
+.adopt-log-item-container tbody tr:nth-child(odd){
+   border: 1px solid rgba(0, 0, 0, 0.315);
+   background-color: #ededed;
+}
+
+ .adopt-log-item-container table tr td:nth-child(2){
+   background-color: var(--primary-color);
+   color: #Fff;   
+}
+
+ .adopt-log-item-container table tr .appl-action button{
+   border: none;
+   padding: 5px 10px;
+   color: #fff;
+   background-color: rgb(83, 110, 173);
+   border-radius: 3px;
+   font-size: .9em;
+   transition: background ease-in-out .5s;
+}
+
+.adopt-log-item-container table tr .appl-action button:hover{
+   background-color: rgb(64, 84, 132);
+}
+
+
+ .adopt-log-item-container table tr th:last-child{
+   text-align: center;
+}
+
+ .adopt-log-item-container table tr td:last-child{
+   text-align: center;
+}
+
+ .adopt-log-item-container table tr .appl-action button .fas{
+   color: #fff;
+}
+
+
+.set-adopt-log-date input{
+   box-sizing: border-box;
+   padding: 3px 10px;
+   font-size: 1em;
+   outline: none;
+   border: 1px solid rgba(0, 0, 0, 0.418);
+   width: 170px;
+}

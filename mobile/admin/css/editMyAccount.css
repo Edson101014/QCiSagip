@@ -1,0 +1,57 @@
+main {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 900px !important;
+}
+main > div {
+  width: 100%;
+  /* background-color: black; */
+}
+/* main .logo {
+  max-width: 150px;
+  max-height: 150px;
+  margin-inline: auto;
+} */
+.card-two-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.card-three-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.form-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.form-btn > a {
+  background-color: var(--card-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25em;
+  padding: 0.5em 1em 0.5em 1em;
+  font-weight: 600;
+}
+.form-btn > a:hover {
+  background-color: var(--primary-blue);
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+@media (max-width: 700px) {
+  .card-two-inputs {
+    grid-template-columns: auto !important;
+  }
+  .card-three-inputs {
+    grid-template-columns: auto !important;
+  }
+}
+
+.is-invalid {
+  border-color: red !important;
+}
+
+.invalid-feedback {
+  color: red;
+}

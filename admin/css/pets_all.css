@@ -1,0 +1,237 @@
+@import url('./main.css');
+
+
+.all-pet{
+   flex-direction: column;
+   /* justify-content: space-between; */
+   /* background-color: var(--primary-color); */
+   padding: 1% 2%;
+}
+
+.all-pet .all-pets-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   /* background-color: aliceblue; */
+}
+
+.all-pet .all-pets-header .title-text{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+   padding-right: 10px;
+}
+
+.all-pet .all-pets-header .title-text #edit_pet_message p{
+   padding: 5px 10px;
+   font-weight: 1em;
+   font-weight: 400;
+   color: #fff;
+   border-radius: 4px;
+}
+
+
+.all-pet .all-pets-header .title-text h1{
+   margin-right: 10px;
+}
+
+.all-pet .all-pets-header .filter-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 148, 148); */
+   padding: .5% 0%;
+   border-radius: 6px;
+
+}
+
+.all-pet .all-pets-header .filter-box .filter{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 119, 119); */
+   width: 60%;
+   height: 100%;
+}
+
+.all-pet .all-pets-header .filter-box .filter .search{
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 60%;
+   height: 100%;
+   border: 1px solid var(--dark-color);
+   border-radius: 6px;
+   margin-right: 10px;
+   /* background-color:aquamarine; */
+}
+
+
+.all-pet .all-pets-header .filter-box .filter .search .fa{
+   color: var(--secondary-text);
+   position: absolute;
+   margin-left: 2.5%;
+}
+
+.all-pet .all-pets-header .filter-box .filter .search input[type="search"]{
+   width: 100%;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   padding-left: 40px;
+   border: none;
+   background: none;
+   border-radius: 6px;
+   /* margin-left: 10px; */
+}
+
+
+
+
+.all-pet .all-pets-header .filter .sort-by{
+   display: flex;
+   align-items: center;
+   width: 40%;
+   height: 100%;
+   /* background-color: aqua; */
+}
+
+.all-pet .all-pets-header .filter .sort-by p{
+   width: max-content;
+   margin-right: 10px;
+}
+
+
+.all-pet .all-pets-header .filter .sort-by select{
+   width: max-content;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   border-radius: 6px;
+   border: 1px solid var(--dark-color);
+}
+
+
+
+
+
+
+
+
+
+
+ .all-pet-item-container{
+   /* background-color: rgb(192, 159, 159); */
+   width: 100%;
+   height: 100%;
+   margin-top: 10px
+}
+
+ .all-pet-item-container table{
+   border-collapse: collapse;
+}
+
+ .all-pet-item-container table thead{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.516); 
+   border-top: 1px solid rgba(0, 0, 0, 0.516);  
+}
+
+ .all-pet-item-container table tr th{
+   padding: 5px;
+   text-transform: capitalize;
+   color: #000000;
+   /* background-color: var(--primary-color); */
+   font-size: 1em;
+   font-weight: 500;
+   text-align: left;
+   /* border: 1px solid black; */
+}
+
+ /* .all-pet-item-container table tr .avatar{
+   text-align: center;
+}
+
+ .all-pet-item-container table tr .avatar .all-pet-avatar{
+   width: 30px;
+   height: 30px;
+   overflow: hidden;
+   border-radius: 50%;
+   margin: auto;
+}
+
+
+ .all-pet-item-container table tr .avatar .all-pet-avatar img{
+   width: 100%;
+   height: 100%;
+} */
+
+
+.all-pet-item-container table tbody tr td{
+   /* text-align: ; */
+   padding: 10px;
+   /* background-color: #fff; */
+   text-transform: capitalize;
+   border: 1px solid rgba(0, 0, 0, 0.153);
+}
+
+
+.all-pet-item-container table tbody tr:nth-child(odd){
+   background-color: #ededed;
+   border: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+
+.all-pet-item-container table tr td:nth-child(2){
+   background-color: var(--primary-color);
+   color: #Fff;   
+}
+
+.all-pet-item-container table tr .all-pet-action{
+   /* display: flex;
+   justify-content: space-evenly; */
+   text-align: center;
+   width: 10%;
+}
+
+ .all-pet-item-container table tr .all-pet-action .view-pets-btn{
+   border: none;
+   padding: 5px 10px;
+   color: #fff;
+   background-color: rgb(83, 110, 173);
+   border-radius: 3px;
+   font-size: .9em;
+   margin: auto;
+   cursor: pointer;
+   transition: background ease-in-out .7s;
+}
+.all-pet-item-container table tr .all-pet-action .view-pets-btn:hover{
+   background-color: rgb(71, 94, 148);
+}
+
+ .all-pet-item-container table tr th:last-child{
+   text-align: center;
+}
+
+ .all-pet-item-container table tr .all-pet-action .view-pets-btn .fas{
+   color: #fff;
+}
+
+.all-pet-item-container table tr .all-pet-avatar .avatar-container{
+   width: 40px;
+   height: 40px;
+   overflow: hidden;
+   /* border-radius: 50%; */
+   margin: auto;
+}
+
+.all-pet-item-container table tr .all-pet-avatar .avatar-container img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+

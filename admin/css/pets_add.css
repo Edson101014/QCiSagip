@@ -1,0 +1,332 @@
+@import url('./main.css');
+
+
+.add-pet{
+   flex-direction: column;
+   padding: 1% 2%;
+}
+
+
+.add-pet .add-pets-header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   border-bottom: 1px solid black;
+   /* margin: 0 10px; */
+   /* background-color: aliceblue; */
+}
+
+.add-pet .add-pets-header #pet-message p{
+   /* background-color: #5dc08a; */
+   color: #fff;
+   font-size: 1em;
+   padding: 7px 10px;
+   font-weight: 400;
+}
+
+.add-pet .add-pets-header .title-text{
+   display: flex;
+   align-items: center;
+ 
+   
+   /* background-color: antiquewhite; */
+}
+
+.add-pet .add-pets-header .title-text h1{
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+
+/* CONTAINER */
+.add-pet-item-container{
+   padding: 1% 0;
+   /* background-color: aliceblue; */
+   overflow-y: scroll;
+}
+
+.add-pet-item-container form{
+   display: flex;
+   flex-direction: column;
+ 
+}
+
+
+/* PET DETAILS */
+
+.add-pet-item-container form .pet-details{
+   
+   display: flex;
+   border-bottom: 1px solid rgb(184, 184, 184);
+   /* flex-direction: column; */
+   /* background-color: antiquewhite; */
+}
+
+.add-pet-item-container form .pet-details .pet-info{
+
+   display: flex;
+   flex-direction: column;
+   /* flex-wrap: wrap; */
+   /* justify-content: space-around; */
+   padding: 10px 0;
+
+   width: 50%;
+}
+
+.add-pet-item-container form .pet-details .pet-info .form-input{
+   margin: 10px;
+   /* background-color: aquamarine; */
+   /* width: 100%; */
+   display: flex;
+   justify-content: space-between;
+   /* background-color: rgb(131, 159, 183); */
+}
+
+
+.add-pet-item-container form .pet-details .pet-info .form-input input{
+   font-size: 1em;
+   padding: 10px 12px;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #f4f4f4;
+   width: 200px;
+
+}
+
+.add-pet-item-container form .pet-details .pet-info .form-input select{
+   font-size: 1em;
+   padding: 10px 12px;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #f4f4f4;
+   width: 200px;
+
+}
+
+.add-pet-item-container form .pet-details .pet-info .form-input select:focus {
+   outline: 1px solid var(--primary-color);
+}
+
+.add-pet-item-container form .pet-details .pet-info .form-input input:focus {
+   outline: 1px solid var(--primary-color);
+}
+
+.add-pet-item-container form .pet-details .pet-story-img{
+   /* background-color: aqua; */
+   width: 50%;
+   padding: 1%;
+}
+
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input textarea{
+   font-size: 1em;
+   padding: 10px 12px;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #f4f4f4;
+   height: 200px;
+}
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input label{
+   margin-bottom: 10px;
+}
+
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input .pet-fe-img{
+   /* background-image: url("../../assets/about-picture.png"); */
+   background-color: #f4f4f4;
+   object-fit: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 150px;
+   width: 200px;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   /* color: #fff; */
+   cursor: pointer;
+}
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input .pet-fe-img:hover{
+   background-color: #d4d4d4;
+}
+
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input input[type="file"]{
+   display: block;
+}
+
+.add-pet-item-container form .pet-details .pet-story-img .form-input p{
+   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* PET CHARACTERISTICS */
+
+.add-pet-item-container form .pet-char{
+   /* background-color: aliceblue; */
+   padding: 1%;
+   border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.add-pet-item-container form .pet-char .title{
+   margin-bottom: 10px;
+}
+
+
+.add-pet-item-container form .pet-char .characteristics{
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   margin-bottom: 10px;
+  
+}
+
+.add-pet-item-container form .pet-char .characteristics .form-input {
+   background-color: #f4f4f4;
+   width: 300px;
+   padding: 10px 12px;
+   border-radius: 3px;
+   margin: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.add-pet-item-container form .pet-char .characteristics .form-input label{
+   width: 100%;
+   /* background-color: #d26767; */
+} 
+
+
+
+
+
+
+
+
+/* PET MED HISTORY */
+
+.add-pet-item-container form .pet-med-history{
+   /* background-color: aliceblue; */
+   padding: 1%;
+   border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+.add-pet-item-container form .pet-med-history .title{
+   margin-bottom: 10px;
+}
+
+
+.add-pet-item-container form .pet-med-history .med-history{
+   display: flex;
+   /* flex-direction: column; */
+   flex-wrap: wrap;
+   margin-bottom: 10px;
+  
+}
+
+
+
+.add-pet-item-container form .pet-med-history .med-history table{
+   border-collapse: collapse;
+   width: 50%;
+}
+
+.add-pet-item-container form .pet-med-history .med-history table tr th{
+   text-align: left;
+   padding: 5px;
+}
+
+.add-pet-item-container form .pet-med-history .med-history table tr td .form-input.check-box{
+   background-color:#f4f4f4;
+   width: 300px;
+   padding: 10px 12px;
+   border-radius: 3px;
+   margin: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.add-pet-item-container form .pet-med-history .med-history table tr td .form-input.med_date{
+   margin: 5px;
+}
+
+.add-pet-item-container form .pet-med-history .med-history table tr td .form-input.med_date input{
+   width: 300px;
+   padding: 10px 12px;
+   border-radius: 3px;
+   outline: none;
+   border: none;
+   background-color:#f4f4f4;
+}
+
+.add-pet-item-container form .pet-med-history .med-history table tr td .form-input.med_date input:disabled{
+   background-color:#b6b6b6;
+}
+
+
+
+
+
+
+
+
+
+/* .add-pet-item-container form .pet-med-history .med-history .form-input {
+   background-color: #f4f4f4;
+   width: 300px;
+   padding: 10px 12px;
+   border-radius: 3px;
+   margin: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.add-pet-item-container form .pet-med-history .med-history .form-input label{
+   width: 100%;
+ 
+}  */
+
+
+
+/* BUTTON SUBMIT */
+
+.add-pet-item-container form .form-button{
+   padding: 1%;
+}
+
+.add-pet-item-container form .form-button input{
+   background-color: #5dc08a;
+   transition: background ease-in-out .4s;
+   cursor: pointer;
+   padding: 10px 12px;
+   font-size: 1em;
+   font-weight: 400;
+}
+
+.add-pet-item-container form .form-button input:hover{
+   background-color: #4d9f72;
+}

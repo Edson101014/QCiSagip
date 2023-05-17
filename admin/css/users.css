@@ -1,0 +1,216 @@
+@import url('./main.css');
+
+.cnt-users{
+   flex-direction: column;
+   padding: 1% 2%;
+}
+
+.cnt-users .users-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   /* background-color: aliceblue; */
+}
+
+.cnt-users .users-header .title-text{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.cnt-users .users-header .title-text h1{
+   margin-right: 10px;
+}
+
+.cnt-users .users-header .filter-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #fff;
+   padding: .5% 1%;
+   border-radius: 6px;
+
+}
+
+.cnt-users .users-header .filter-box .filter{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 119, 119); */
+   width: 60%;
+   height: 100%;
+}
+
+.cnt-users .users-header .filter-box .filter .search{
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 70%;
+   height: 100%;
+   border: 1px solid var(--dark-color);
+   border-radius: 6px;
+   margin-right: 10px;
+   /* background-color:aquamarine; */
+}
+
+
+.cnt-users .users-header .filter-box .filter .search .fa{
+   color: var(--secondary-text);
+   position: absolute;
+   margin-left: 2.5%;
+}
+
+.cnt-users .users-header .filter-box .filter .search input[type="search"]{
+   width: 100%;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   padding-left: 40px;
+   border: none;
+   background: none;
+   border-radius: 6px;
+   /* margin-left: 10px; */
+}
+
+
+
+
+.cnt-users .users-header .filter .sort-by{
+   display: flex;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+   /* background-color: aqua; */
+}
+
+.cnt-users .users-header .filter .sort-by p{
+   width: max-content;
+   margin-right: 10px;
+}
+
+
+.cnt-users .users-header .filter .sort-by select{
+   width: max-content;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   border-radius: 6px;
+   border: 1px solid var(--dark-color);
+}
+
+
+
+
+
+
+
+.cnt-users .user-item-container{
+   /* background-color: rgb(192, 159, 159); */
+   width: 100%;
+   height: 100%;
+   margin-top: 10px
+}
+
+.cnt-users .user-item-container table{
+   border-collapse: collapse;
+}
+
+.cnt-users .user-item-container table thead{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.516); 
+   border-top: 1px solid rgba(0, 0, 0, 0.516);  
+   /* background: rgba(235, 147, 147, 0.582); */
+   /* display: block;  */
+   margin-bottom: 10px;
+}
+
+.cnt-users .user-item-container table tr th{
+   padding: 5px 10px;
+   text-transform: capitalize;
+   color: #000000;
+   /* background-color: var(--primary-color); */
+   font-size: 1em;
+   font-weight: 500;
+   text-align: left;
+   /* border: 1px solid black; */
+}
+
+.cnt-users .user-item-container table tr .avatar{
+   text-align: center;
+}
+
+.cnt-users .user-item-container table tr .avatar .user-avatar{
+   width: 30px;
+   height: 30px;
+   overflow: hidden;
+   border-radius: 50%;
+   margin: auto;
+   background-color: rgb(200, 101, 101);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   letter-spacing: 0;
+   /* padding: 5px; */
+}
+
+.cnt-users .user-item-container table tr .avatar .user-avatar p{
+   color: #fff;
+   text-transform: uppercase;
+}
+
+
+.cnt-users .user-item-container table tr .avatar .user-avatar img{
+   width: 100%;
+   /* height: 100%; */
+}
+
+.user-item-container table tbody tr:nth-child(odd){
+   /* border: 1px solid rgba(0, 0, 0, 0.315); */
+   background-color: rgb(243, 229, 229);
+}
+
+
+.user-item-container table tbody tr:nth-child(even){
+   /* border: 1px solid rgba(0, 0, 0, 0.315); */
+   background-color: #fff;
+}
+
+
+
+.cnt-users .user-item-container table tr td{
+   /* text-align: ; */
+   padding: 5px 10px;
+   /* background-color: #fff; */
+   border: 1px solid rgba(0, 0, 0, 0.153);
+   text-transform: capitalize;
+}
+
+.cnt-users .user-item-container table tr td:nth-child(2){
+   background-color: var(--primary-color);
+   color: #Fff;   
+}
+
+.cnt-users .user-item-container table tr .user-status{
+   text-align: center;
+}
+
+.cnt-users .user-item-container table tr .user-status .fa{
+   color: #6dc65f;
+}
+
+.cnt-users .user-item-container table tr td:last-child{
+   text-align: right;
+   padding: 0 10px;
+   
+}
+
+.cnt-users .user-item-container table tr th:last-child{
+   text-align: right;
+   padding: 0 10px;
+}
+
+
+

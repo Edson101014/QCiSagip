@@ -1,0 +1,6 @@
+.card-input .invalid-feedback,
+.register-input .invalid-feedback {
+  margin-top: -1rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}

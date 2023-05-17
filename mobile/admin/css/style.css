@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --primary-blue: rgba(83, 110, 173);
+  --primary-orange: #f09537;
+  --secondary-blue: #4f66b4;
+  --secondary-orange: #ffc35f;
+  --dark-color: #19191e;
+  --white-color: #eff1ff;
+  --alert: #d93939;
+  --bg-color: #fffaf4;
+  --card-color: #fafbff;
+  --gradient-orange: linear-gradient(to right, #ff8f35, #ff9e39);
+  --gradient-black-transparent: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 0),
+    #000000
+  );
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --card-pet-name: #f9b44c;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: var(--bg-color);
+  /* background-image: url("../assets/2.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center; */
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Buttons  */
+button {
+  cursor: pointer;
+  border: 0;
+  font-weight: 600;
+
+  /* width: 100%; */
+}
+.btn {
+  background-color: transparent;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: white;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Typography, Inputs  */
+.clr-primary {
+  color: var(--primary-blue);
+  font-weight: 700;
+}
+.alert-red {
+  color: var(--alert);
+}
+input:not([type="file"]),
+select {
+  border-radius: 0.25em;
+  border: 1px solid gray;
+  padding: 0.25em;
+}
+input,
+select,
+textarea {
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+}
+.mobile-logo {
+  max-width: 150px;
+  max-height: 150px;
+}
+.small {
+  font-size: 0.8rem;
+}
+/* Show and Hide Password Eye  */
+
+.password-all {
+  position: relative;
+}
+
+.password-toggle,
+.confirmpassword-toggle {
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.5rem;
+  cursor: pointer;
+}

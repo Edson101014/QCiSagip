@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+video {
+  width: 100%;
+  height: 240px;
+}
+canvas {
+  max-width: 100%;
+  display: flex;
+  justify-self: center;
+  margin-inline: auto;
+}
+button {
+  width: 100%;
+}
+a {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  /* width: 100%; */
+  text-align: center;
+}
+.report {
+  width: min(500px, 90%);
+  margin-inline: auto;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+}
+.report > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--alert);
+  margin-bottom: 1rem;
+}
+form {
+  position: relative;
+  /* background-color: var(--card-color); */
+  padding: 2rem;
+  /* box-shadow: var(--box-shadow); */
+  border-radius: 0.5em;
+  overflow: hidden;
+  height: 100%;
+}
+.form-1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-1 > .form-buttons > button,
+.form-1 > .form-buttons > a {
+  width: 50% !important;
+  margin-left: auto;
+}
+
+.report-photo {
+  position: relative;
+}
+.inputPhoto {
+  display: none;
+}
+.upload-file {
+  background-color: var(--white-color);
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.photo-buttons {
+  display: flex;
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+/* .image-take > div,
+.image-upload {
+  height: 240px;
+  overflow: auto;
+} */
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.current {
+  left: 0;
+}
+.form-2 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: min(100% - 4rem);
+  height: 100%;
+}
+.form-2 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.back {
+  background-color: var(--white-color);
+}
+.hidden {
+  display: none;
+}
+
+.toLeft {
+  left: -200% !important;
+}
+.isDisplay {
+  display: block !important;
+}

@@ -1,0 +1,42 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.services .left-content {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.services .left-content > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.services .left-content > p {
+  text-align: justify;
+}
+
+/* .services .left-content button{
+  background-color: rgb(195, 195, 195);
+  color: rgb(187, 187, 187);
+  font-weight: 500;
+  cursor: default;
+} */
+
+.services .left-content button:disabled{
+  background-color: rgb(148, 148, 148);
+  color: rgb(209, 209, 209);
+  font-weight: 600;
+}
+
+
+@media (max-width: 1000px) {
+  .services {
+    grid-template-columns: auto;
+  }
+  .services .left-content > div > button {
+    width: 100%;
+  }
+}

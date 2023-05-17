@@ -1,0 +1,39 @@
+.cms-announcement-container .form-text,
+.cms-announcement-container .form-input {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 0.5rem;
+}
+
+.cms-announcement-container .form-text input[type="text"] {
+  font-size: 1em;
+  padding: 10px 12px;
+  outline: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.492); */
+  border: none;
+  border-radius: 3px;
+  background-color: #f4f4f4;
+  width: 100%;
+}
+.cms-announcement-container .form-input {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  padding-bottom: 1rem;
+}
+.cms-announcement-container .form-input .cms-fe-img {
+  width: 300px !important;
+  background-color: #f4f4f4 !important;
+  padding: 5rem;
+}
+.cms-announcement-container .form-button input[type="submit"] {
+  background-color: var(--primary-color);
+}
+.hidden {
+  display: none;
+}
+.invalid-feedback {
+  color: red;
+}

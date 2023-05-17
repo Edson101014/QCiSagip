@@ -1,0 +1,230 @@
+@import url('./main.css');
+
+
+.view-admin-modal{
+   position: absolute;
+   top: 0%;
+   left: 0;
+   /* transform: translate(-50%, -50%); */
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.541);
+   align-items: center;
+   justify-content: center;
+   display: none;
+   z-index: 1;
+}
+
+.displayViewAdminModal{
+   display: flex;
+}
+
+
+.admin-profile-container{
+   width: 500px;
+   height: max-content;
+   padding: 2%;
+   background-color: #fff;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   border-radius: 12px;
+   margin: auto;
+   margin-top: 5%;
+}
+
+.admin-profile-container .admin-profile {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 10px;
+   border-bottom: 1px solid black;
+   padding-bottom: 10px;
+   
+}
+
+.admin-profile-container .admin-profile .admin-avatar{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-bottom: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: var(--primary-color);
+}
+
+.admin-profile-container .admin-profile .admin-avatar p{
+   color: #fff;
+   font-size: 3em;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.admin-profile-container .admin-profile .admin-avatar img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.admin-profile-container .admin-profile h4{
+   color: #797979;
+   font-weight: 600;
+   font-size: .9em;
+}
+
+.admin-info .text-info{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+   padding: 5px 0;
+}
+
+.admin-info .text-info h3{
+   font-size: .8em;
+   /* letter-spacing: 1px; */
+   color: rgba(0, 0, 0, 0.419);
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.admin-info .text-info p{
+   font-size: 1em;
+   text-transform: capitalize;
+}
+
+.admin-info .text-info p.admin-id{
+   font-weight: 600;
+}
+
+
+.admin-info .text-info.text-name{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 20%;
+}
+
+.admin-profile-container .form-button{
+   display: flex;
+   justify-content: end;
+   margin-top: 10px;
+}
+
+.admin-profile-container .form-button button{
+   background-color: #c8c8c8;
+   color: #fff;
+   border: none;
+   font-size: 1em;
+   padding: 6px 12px;
+   border-radius: 3px;
+   cursor: pointer;
+   margin-right: 15px;
+}
+
+.admin-profile-container .form-button button.deactivate-admin{
+
+   background-color: rgb(212, 109, 109);
+
+}
+
+.admin-profile-container .form-button button.deactivate-admin:hover{
+   background-color: rgb(178, 92, 92);
+}
+
+
+
+
+
+
+
+
+.admin-message{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   /* visibility: hidden; */
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   z-index: 2;
+   /* background-color: #79797945; */
+}
+
+.admin-message .message-box{
+   background-color: #fff;
+   padding: 2%;
+   border-radius: 12px;
+   box-shadow: 0 8px 10px 0 rgba(0,0,0,.3);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 450px;
+   font-size: 1em;
+   margin-top: 10%;
+   
+}
+
+
+.admin-message .message-box .icon-ask .fa{
+   font-size: 5em;
+   color: rgb(212, 109, 109);
+   /* border: 5px solid rgb(212, 212, 212); */
+   /* border-radius: 50%; */
+}
+
+
+.admin-message .message-box .form-button{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 100%;
+   margin-top: 20px;
+}
+
+.admin-message .message-box .form-button button{
+   border: none;
+   background-color: #aeaeae;
+   color: #fff;
+   font-size: 1em;
+   border-radius: 6px;   
+   width: 45%;
+   padding: 10px 12px;
+   cursor: pointer;
+}
+.admin-message .message-box .form-button button:hover{
+   background-color: #949494;
+}
+
+.admin-message .message-box .form-button button.admin-yes-btn{
+   background-color: rgb(212, 109, 109);
+}
+
+.admin-message .message-box .form-button button.admin-yes-btn:hover{
+   background-color: rgb(178, 92, 92);
+}
+
+
+
+.admin-message .message-box.approve-box .icon-ask .fa{
+   font-size: 5em;
+   color: rgb(122, 221, 142);
+   border: 5px solid rgb(212, 212, 212);
+   border-radius: 50%;
+}
+
+
+
+/* YES BUTTON */
+.admin-message .message-box.approve-box .form-button button.yes-btn{
+   background-color: rgb(109, 212, 145);
+}
+
+.admin-message .message-box.approve-box .form-button button.yes-btn:hover{
+   background-color: rgb(92, 178, 102);
+}

@@ -1,0 +1,46 @@
+main {
+  display: grid;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  padding: 1rem;
+}
+/* onload  */
+.onLoad {
+  position: fixed;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  background-color: var(--bg-color);
+}
+.onLoadLogo {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.mobile-heading {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobile-buttons {
+  background-color: var(--card-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.mobile-buttons > a {
+  display: inline-block;
+  font-weight: 600;
+  padding: 0.75em 1.5em 0.75rem 1.5em;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+}

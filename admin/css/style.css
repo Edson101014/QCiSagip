@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  --primary-blue: #000080;
+  --primary-orange: #f09537;
+  --secondary-blue: #4f66b4;
+  --secondary-orange: #ffc35f;
+  --dark-color: #19191e;
+  --white-color: #eff1ff;
+  --alert: #d93939;
+  --bg-color: #fffaf4;
+  --card-color: #fafbff;
+  --gradient-orange: linear-gradient(to right, #ff8f35, #ff9e39);
+  --gradient-black-transparent: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 0),
+    #000000
+  );
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --card-pet-name: #f9b44c;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif;
+  max-width: 1380px;
+  margin-inline: auto;
+}
+
+/* ---- Text ---- */
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.small {
+  font-size: 0.75rem;
+}
+.primary {
+  color: var(--primary-blue);
+}
+.alert-red {
+  color: var(--alert);
+}
+input {
+  border-radius: 0.25em;
+  border: 1px solid gray;
+  padding: 0.25em;
+}
+input:not([type="file"]),
+select {
+  border-radius: 0.25em;
+  border: 1px solid gray;
+  padding: 0.25em;
+}
+/* --------------- */
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: 0;
+}
+.button {
+  padding: 0.25em 1.5em;
+  border-radius: 1.25rem;
+}
+.gradient-button {
+  background-image: var(--gradient-orange);
+  color: var(--white-color);
+  font-weight: 700;
+}
+.gradient-button:hover {
+  /* border: 1px solid var(--primary-orange); */
+  background-image: none;
+  background-color: var(--white-color);
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+.border-button {
+  border: 1px solid var(--primary-orange) !important;
+  background-color: transparent;
+  color: var(--primary-orange);
+  font-weight: 700;
+}
+.border-button:hover {
+  background-color: var(--primary-orange);
+  color: var(--white-color);
+}
+.border-white-button {
+  border: 1px solid var(--white-color) !important;
+  background-color: transparent;
+  color: var(--white-color);
+  font-weight: 700;
+}
+.border-white-button:hover {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+}
+.white-button {
+  background-color: var(--white-color) !important;
+  color: var(--dark-color) !important;
+}
+.white-button:hover {
+  background-color: rgb(59, 59, 59) !important;
+  color: var(--white-color) !important;
+}
+.form-button {
+  width: 100%;
+  border-radius: 0.25em;
+  padding: 0.5em 0 0.5em 0;
+}
+.show-icon,
+.close-icon {
+  cursor: pointer;
+}
+/* --------------- */
+
+/* Cards */
+.card {
+  background-color: var(--card-color);
+  box-shadow: var(--box-shadow);
+}
+/* --------------- */
+
+/* Slick Slider */
+.slick-prev:before,
+.slick-next:before {
+  color: var(--dark-color) !important;
+}
+/* --------------- */
+/* Navigation */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 50;
+  max-width: 1380px;
+  margin-inline: auto;
+}
+/* --------------- */
+.user {
+  position: relative;
+  left: 0.5rem;
+  cursor: pointer;
+}
+.user-dropdown {
+  display: none;
+  position: absolute;
+  background: white;
+  padding: 1rem;
+  width: 130px;
+  right: 0;
+  min-height: fit-content;
+}
+.user-dropdown a {
+  /* padding: 1rem; */
+  display: block;
+  margin-top: 1rem;
+}
+.user-dropdown a:hover {
+  color: var(--primary-orange);
+}
+/* Web navigation */
+header .web-nav {
+  display: none;
+}
+header .web-nav ul {
+  display: flex;
+  gap: 1rem;
+}
+.logo {
+  display: none;
+}
+header .web-nav ul a:hover {
+  color: var(--primary-orange);
+}
+.web-services-container:hover > div {
+  display: block;
+}
+.web-services-toggle {
+  position: relative;
+  display: none;
+}
+.web-nav .web-services-toggle .ul-items {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0 !important;
+  padding-top: 0.75rem;
+  /* margin-top: 1rem; */
+}
+.web-nav .web-services-toggle .ul-items li {
+  padding: 0.75rem;
+  background-color: #ffffff;
+}
+/* --------------- */
+
+/* Toggle Mobile Navigation */
+header .mobile-nav {
+  background-color: var(--dark-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: none;
+  z-index: 100;
+}
+.mobile-nav-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+  padding-top: 1.5rem; /* text-align: center; */
+  padding-left: 5rem;
+  gap: 1rem;
+}
+.mobile-nav-container .mobile-nav-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.25rem;
+  margin-right: 1.25rem;
+}
+.mobile-nav-container nav ul {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.mobile-nav-container nav ul li a {
+  color: white;
+}
+.mobile-nav-container nav ul li a:hover,
+.mobile-services:hover {
+  color: var(--primary-orange);
+}
+.withItems {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.web-services,
+.mobile-services {
+  cursor: pointer;
+}
+.mobile-services {
+  color: white;
+}
+
+.mobile-services-toggle {
+  display: none;
+}
+/* .main-nav .cta-button {
+  display: none;
+} */
+.mobile-nav .mobile-services-toggle .ul-items {
+  width: auto;
+  margin-left: 2.25rem;
+}
+/* --------------- */
+
+/* Reminder  */
+.reminder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-color);
+  padding: 1rem 2rem 1rem 2rem;
+  gap: 1rem;
+}
+.reminder > p {
+  font-size: 0.9rem;
+}
+.reminder > i {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 0.25em;
+}
+.reminder > i:hover {
+  background-color: lightgray;
+
+  /* color: white !important; */
+}
+.user i {
+  font-size: 2rem;
+}
+.indent {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+.faqs-cards-answer h4 {
+  margin-top: 0.5rem;
+}
+
+/* Footer  */
+.footer-container {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  margin-top: 3rem;
+  padding: 2rem;
+  gap: 3rem;
+}
+.footer-container div > h3 {
+  margin-bottom: 1rem;
+}
+.footer-container > .contact {
+  display: grid;
+  gap: 1rem;
+}
+.footer-container > .contact div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footer-container > .services {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-container > .services ul {
+  display: grid;
+
+  gap: 1rem;
+}
+.footer-container > .services ul a:hover {
+  color: var(--primary-orange);
+}
+@media (min-width: 475px) {
+  /* -- Navigation --*/
+}
+
+@media (min-width: 768px) {
+  /* -- Navigation --*/
+  .main-nav {
+    justify-content: space-evenly;
+  }
+  .mobile-nav-show {
+    display: none;
+  }
+  .web-nav,
+  .logo {
+    display: block !important;
+  }
+  .footer-container {
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 1024px) {
+  /* -- Navigation --*/
+  header .web-nav ul {
+    gap: 3rem !important;
+  }
+}
+
+header {
+  margin-bottom: 96px;
+}
+
+/* Show and Hide Password Eye  */
+.password-all {
+  position: relative;
+}
+
+.password-toggle,
+.confirmpassword-toggle {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  cursor: pointer;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Receipt</title>
+    <!-- <style>
+      main {
+        max-width: 500px;
+        margin-inline: auto;
+      }
+      header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        border-bottom: 1px solid black;
+      }
+      .logo {
+        width: 120px;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+      section > h2 {
+        text-align: center;
+      }
+      .receipt-detail {
+        display: grid;
+        gap: 1rem;
+        border-bottom: 1px solid black;
+        padding-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      .receipt-detail > div,
+      .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .important {
+        font-weight: 700;
+        font-size: 1.25rem;
+      }
+      .total {
+        margin-top: 2rem;
+      }
+      .x2 {
+        font-size: 2rem;
+      }
+      footer {
+        background-color: rgba(17, 82, 114, 100%);
+        color: white;
+        padding-inline: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-top: 0.25rem;
+        margin-top: 1rem;
+        text-align: center;
+        /* text-transform: uppercase; */
+        font-size: 0.95rem;
+      }
+      .quote {
+        border-bottom: 1px solid white;
+        text-transform: uppercase;
+      }
+      .link {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style> -->
+  </head>
+  <body>
+    <main style="max-width: 500px; margin-inline: auto">
+      <header
+        style="
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          text-align: center;
+          border-bottom: 1px solid black;
+        "
+      >
+        <div style="width: 120px">
+          <img
+            src="../assets/adopt-logo.png"
+            style="object-fit: cover; width: 100%"
+            alt="QC logo"
+          />
+        </div>
+        <div><h1>QC ANIMAL CARE & ADOPTION CENTER</h1></div>
+        <div class="logo" style="width: 120px">
+          <img
+            src="../assets/qclogo.png"
+            style="object-fit: cover; width: 100%"
+            alt="QC Vet Logo"
+          />
+        </div>
+      </header>
+      <section style="text-align: center">
+        <h2>INVOICE RECEIPT</h2>
+        <div
+          class="receipt-detail"
+          style="
+            display: grid;
+            gap: 1rem;
+            border-bottom: 1px solid black;
+            padding-bottom: 2rem;
+            margin-top: 2rem;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span class="important" style="font-weight: 700; font-size: 1.25rem"
+              >ADOPTER NAME</span
+            ><span>Name</span>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span class="important" style="font-weight: 700; font-size: 1.25rem"
+              >PURPOSE</span
+            ><span>Adoption fee</span>
+          </div>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span class="important" style="font-weight: 700; font-size: 1.25rem"
+              >DATE</span
+            ><span>10/10/10</span>
+          </div>
+          <div>
+            <span class="important" style="font-weight: 700; font-size: 1.25rem"
+              >AMOUNT DETAIL</span
+            ><span>P500</span>
+          </div>
+        </div>
+        <div
+          class="total"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <span class="important" style="font-weight: 700; font-size: 1.25rem"
+            >TOTAL</span
+          ><span
+            class="important x2"
+            style="font-weight: 700; font-size: 1.25rem; font-size: 2rem"
+            >P500</span
+          >
+        </div>
+      </section>
+      <footer
+        style="
+          background-color: rgba(17, 82, 114, 100%);
+          color: white;
+          padding-inline: 0.75rem;
+          padding-bottom: 0.75rem;
+          padding-top: 0.25rem;
+          margin-top: 1rem;
+          text-align: center;
+          /* text-transform: uppercase; */
+          font-size: 0.95rem;
+        "
+      >
+        <div
+          class="quote"
+          style="border-bottom: 1px solid white; text-transform: uppercase"
+        >
+          <h4>
+            "Opening up your life to a pet who needs a home is one of the most
+            fulfilling you can do"
+          </h4>
+        </div>
+        <div
+          class="link"
+          style="
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+          "
+        >
+          <span>Quezon City Animal Care and Adoption Center</span>
+          <span>https://www.isagip.site</span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

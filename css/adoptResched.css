@@ -1,0 +1,70 @@
+.resched {
+  width: max(600px, 1rem);
+  margin-inline: auto;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.resched-header {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.153);
+}
+.resched-refno,
+.resched-setsched {
+  margin-bottom: 2rem;
+}
+
+.resched-setsched > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.resched-setsched .form-input-disable {
+  margin-bottom: 1rem;
+}
+.resched-setsched .form-input-disable input:read-only {
+  background-color: #cbcbcb;
+  cursor: default;
+  color: #444444;
+  border: none;
+}
+.resched-setsched input,
+.resched-setsched textarea {
+  width: 60%;
+}
+.resched-buttons {
+  display: flex;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+  margin-bottom: 1rem;
+}
+.resched-buttons button,
+.resched-buttons a {
+  text-align: center;
+  width: 100%;
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+}
+.resched-buttons .resched-btn-close {
+  background-color: #8b8b8b;
+  color: white;
+}
+.submit-btn {
+  background-color: var(--primary-orange);
+  color: white;
+  font-weight: 600;
+}
+
+.is-invalid {
+  border-color: red !important;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 0.8rem;
+  padding-left: 15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

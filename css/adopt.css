@@ -1,0 +1,221 @@
+.filter {
+  max-width: 1200px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  padding-inline: 1rem;
+}
+.search > input {
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid lightgray;
+}
+
+.search > input:focus {
+  outline-color: var(--card-pet-name);
+}
+
+.sort {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--card-color);
+  box-shadow: var(--box-shadow);
+}
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.filters > h4 {
+  margin-right: 1rem;
+}
+.filters > select {
+  padding: 0.25rem 0.5rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.filters > select:hover {
+  /* background-color: var(--card-pet-name); */
+  outline-color: var(--card-pet-name);
+}
+
+.filters > select:focus {
+  border-color: var(--card-pet-name);
+  outline-color: var(--card-pet-name);
+}
+
+.behavior {
+  margin-top: 1.5rem;
+}
+
+.behavior > h4 {
+  margin-bottom: 0.75rem;
+}
+.behavior div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.behavior div > .form-input-check {
+  margin-right: 10px;
+}
+
+.behavior div > .form-input-check input[type="checkbox"]:checked ~ label {
+  background-color: var(--card-pet-name);
+  border-color: var(--card-pet-name);
+  color: #fff;
+}
+
+.behavior div > .form-input-check label {
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  /* margin-top: 0.25rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.behavior div > .form-input-check label:hover {
+  background-color: var(--card-pet-name);
+  border-color: var(--card-pet-name);
+  color: #fff;
+}
+
+.pet-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  /* display: grid;
+  grid-template-columns: 4fr;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: space-evenly; */
+  height: max-content;
+}
+
+/* .pet-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+.pet-gallery .no-found {
+  background-color: rgba(122, 150, 182, 0.452);
+  color: #33333393;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  margin-top: 0.5em;
+  border: 1px solid rgba(122, 150, 182, 0.531);
+  border-radius: 4px;
+}
+
+.pet-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  margin: 6px;
+
+  width: 280px;
+  height: 280px;
+  max-height: 100%;
+  max-width: 100%;
+  background-image: url("../assets/about-picture.png");
+  transition: transform ease-in-out 0.2s;
+}
+
+.pet-card:hover {
+  transform: scale(1.05);
+}
+.pet-card > a {
+  width: 100%;
+  height: 100%;
+}
+
+.pet-card a > img {
+  width: 100%;
+  height: 100%;
+  /* max-width: 280px;
+  max-height: 280px; */
+  object-fit: cover;
+}
+
+/*.pet-card::after {*/
+/*  content: " ";*/
+/*  position: absolute;*/
+/*  background: var(--gradient-black-transparent);*/
+/*  width: 100%;*/
+/*  height: 50%;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*}*/
+.pet-card > .pet-desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0.5rem;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  gap: 1rem;
+  /* padding: 1rem; */
+}
+
+.pet-desc .pet-name {
+  color: var(--card-pet-name);
+  font-weight: 700 !important;
+  display: block;
+}
+.pet-desc > div span {
+  color: white;
+}
+.pet-desc > div img {
+  max-width: 61px;
+  max-height: 61px;
+}
+
+.petcard-logo {
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 55px;
+  max-height: 55px;
+}
+
+/* Missing PEt  */
+.missingPet {
+  text-align: end;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.missingPet a {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--alert);
+  border-radius: 0.25em;
+  color: white;
+  font-weight: 600;
+}
+.characteristic {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.characteristic.activate {
+  background-color: #333;
+  color: #fff;
+}

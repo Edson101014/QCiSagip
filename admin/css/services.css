@@ -1,0 +1,320 @@
+@import url('./main.css');
+
+
+
+
+.cnt-services{
+   padding: 1%;
+}
+
+.services-content-container{
+   width: 100%;
+   height: 100%;
+   /* background-color: rgb(228, 218, 218); */
+   display: flex;
+}
+
+.services-sub-menu{
+   background-color: white;
+   height: 100%;
+   width: 15%;
+   margin-right: 10px;
+}
+
+
+.services-sub-menu h3{
+   /* background-color: antiquewhite; */
+   font-size: 1em;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   /* text-align: center; */
+   padding: 10px 20px;
+}
+
+.services-sub-menu ul li{
+   list-style-type: none;
+   /* background-color: antiquewhite; */
+   /* margin: 2px 0; */
+   /* border-top: 1px solid rgba(0, 0, 0, 0.24); */
+   border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.services-sub-menu ul li:first-child{
+   border-top: 1px solid rgba(0, 0, 0, 0.137);;
+}
+
+.services-sub-menu ul li .services-sub-link{
+   /* background-color: aquamarine; */
+   padding: 10px 20px;
+   font-size: .90em;
+   display: flex;
+   justify-content: space-between;
+   /* flex-direction: row-reverse; */
+   cursor: default;
+   color: rgb(88, 88, 88);
+   letter-spacing: .5px;
+   /* background-color: aqua; */
+}
+
+
+.services-sub-menu ul li .services-selected{
+   background-color:var(--primary-color);
+   /* background-color: aqua; */
+   color: #fff;
+}
+
+.services-sub-menu ul li .services-selected .fas{
+   color: #fff;
+}
+
+
+
+
+/*  MAIN CONTAINER */
+.services-main-container{
+   width: 90%;
+   height: 100%;
+   background-color: rgb(255, 255, 255);
+   /* padding: 1%; */
+}
+
+.sub-services{
+   width: 100%;
+   height: 100%;
+   
+   display: none;
+}
+
+
+.sub-services-display{
+   display: flex;
+   /* background-color: aliceblue; */
+}
+
+
+
+
+
+.view-service-details .view-ser-container::-webkit-scrollbar{
+   display: none;
+}
+
+.view-service-details{
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.5);
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   display: none;
+}
+
+
+.view-service-details .view-ser-container{
+   width: 50%;
+   height: 90%;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   text-transform: capitalize ;
+   font-size: 1em;
+   overflow: hidden;
+   overflow-y: scroll;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 1% 2%;
+   border-radius: 10px;
+}
+
+
+.view-service-details .view-ser-container .ref-no-date{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2% 3%;
+   border-bottom: .50px solid rgba(0, 0, 0, 0.5);
+   font-size: .9rem;
+ 
+}
+
+
+.view-service-details .view-ser-container .adopter-details{
+   padding: 2% 3%;
+   border-bottom: .50px solid rgba(0, 0, 0, 0.5);
+   /* font-size: .9rem; */
+}
+
+
+.view-service-details .view-ser-container .adopter-details h3{
+   margin-bottom: 10px;
+   font-size: 1em;
+}
+
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+   /* background-color: antiquewhite; */
+}
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section .details{
+   width: 70%;
+   height: 100%;
+   /* background-color: rgb(96, 152, 123); */
+   margin-right: 20px;
+}
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section .details .form-input-disable{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   /* background-color: aliceblue; */
+   margin: 10px 0;
+   text-transform: capitalize;
+}
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section .details .form-input-disable input:read-only{
+   font-size: 1em;
+   padding: 10px 12px;
+   width: 80%;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #cbcbcb;
+   color: #444444;
+   cursor: default;
+   text-transform: capitalize;
+}
+
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section .id-1x1{
+   width: 30%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section .id-1x1 .image{
+   width: 150px;
+   height: 150px;
+   overflow: hidden;
+   /* background-color: #cbcbcb; */
+}
+
+.view-service-details .view-ser-container .adopter-details .adopter-detail-section .id-1x1 .image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.view-service-details .view-ser-container .adopter-details .adopter-house h3{ 
+   color: #7e7e7e;
+
+}
+
+
+.view-service-details .view-ser-container .valid-id {
+   padding: 2% 3%;
+   border-bottom: .50px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.view-service-details .view-ser-container .valid-id .img-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.view-service-details .view-ser-container h3{
+   margin-bottom: 5px;
+}
+
+.view-service-details .view-ser-container .valid-id .img-container .img-holder{
+   width: 250px;
+   height: 150px;
+   overflow: hidden;
+   margin-right: 5px;
+   background-color: var(--primary-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.view-service-details .view-ser-container .valid-id .img-container .img-holder img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+
+
+
+.view-service-details .view-ser-container .button-sched{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 3%;
+}
+
+.view-service-details .view-ser-container .button-sched .date-of-interview{
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+}
+
+.view-service-details .view-ser-container .button-sched .date-of-interview p{
+   margin-right: 10px;
+}
+
+.view-service-details .view-ser-container .button-sched .date-of-interview p span{
+
+   color: rgb(96, 199, 130);
+   font-weight: 500;
+}
+
+.view-service-details .view-ser-container .button-sched .form-button-back button{
+   background-color: #a5a5a5;
+   color: #fff;
+   outline: none;
+   border: none;
+   padding: 10px 12px;
+   font-size: 1em;
+   text-transform: capitalize;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: background ease-in-out .4s;
+
+}
+
+.view-service-details .view-ser-container .button-sched .form-button-back button:hover{
+   background: #949494;
+}
+
+.view-service-details .view-ser-container .button-sched .form-button-back button#next-appl_btn{
+   background-color: var(--primary-color);
+}
+
+.view-service-details .view-ser-container .button-sched .form-button-back button#next-appl_btn:disabled{
+   background: #949494;
+}
+
+.view-service-details .view-ser-container .button-sched .form-button-back button#next-appl_btn:disabled:hover{
+   background: #949494;
+}
+
+.view-service-details .view-ser-container .button-sched .form-button-back button#next-appl_btn:hover{
+   --primary-color: rgb(206, 122, 122);
+   background-color: var(--primary-color);
+}

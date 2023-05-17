@@ -1,0 +1,597 @@
+@import url(./main.css);
+
+body {
+  background-color: #edeef3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  height: 85vh;
+  width: 100%;
+  /* background-color: #cdcdcd; */
+}
+
+.main-header {
+  width: 100%;
+  height: 15vh;
+  max-height: 10%;
+  min-height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(182, 122, 190); */
+  /* padding: 0 1%; */
+}
+
+.main-header .text-header {
+  width: max-content;
+  /* min-width: 35%; 
+   max-width: 35%; */
+  height: 100%;
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 22px;
+  /* background-color: #8f5e5e; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.main-header .text-header .logo {
+  margin-right: 10px;
+}
+
+.main-header .text-header .title {
+  text-align: left;
+  /* background: #f6f6f6; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+
+.main-header .text-header .title-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.main-header .text-header .title-page h1 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.main-header .text-header span {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: var(--dark-color);
+}
+
+.main-header .account-items {
+  width: max-content;
+  /* max-width: 30%;
+   min-width: 30%; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #7474af; */
+  padding-right: 1%;
+}
+
+.main-header .account-items .account-name-icon {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #554ca7; */
+  /* border-left: 1px solid rgba(0, 0, 0, 0.685); */
+}
+
+.main-header .account-items .account-name-icon .my-name {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 10px; */
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background ease-in 0.2s;
+  box-shadow: 10px 0 7px 0 rgba(0, 0, 0, 0.063);
+}
+
+.main-header .account-items .account-name-icon .my-name:hover {
+  background: #f6f6f6;
+}
+
+.main-header .account-items .account-name-icon .my-name .drop-down {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--primary-color-opa); */
+  /* border-radius: 50%; */
+}
+
+.main-header .account-items .account-name-icon .my-name .text {
+  min-width: 65%;
+  line-height: 18px;
+  /* background-color: #55945d; */
+  margin: 0 10px;
+}
+
+.main-header .account-items .account-name-icon .my-name .text h3 {
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.main-header .account-items .account-name-icon .my-profile {
+  width: 40%;
+  /* max-width: 20%;
+   min-width: 20%; */
+  height: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-header .account-items .account-name-icon .my-name .admin-profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.main-header .account-items .account-name-icon .my-name .admin-profile img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.main-header .account-items .account-name-icon .account-menu {
+  background-color: white;
+  position: absolute;
+  min-width: 300px;
+  max-width: 300px;
+  top: 80%;
+  z-index: 1;
+  right: 0;
+  /* padding: 5px; */
+  box-shadow: 0 10px 7px 0 rgba(0, 0, 0, 0.063);
+  border-radius: 6px;
+  overflow: hidden;
+  display: none;
+  /* transition: all ease-in .5s; */
+}
+
+.main-header .account-items .account-name-icon .accIsDisplay {
+  display: block;
+}
+
+.account-name-icon .account-menu .acc-name {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.account-name-icon .account-menu .acc-name .admin-profile {
+  margin-right: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.account-name-icon .account-menu .acc-name .admin-profile img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+}
+
+.account-name-icon .account-menu .acc-name .text h4 {
+  text-transform: capitalize;
+}
+
+.account-name-icon .account-menu .acc-name .text p {
+  color: #494949;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+
+.account-name-icon .account-menu ul li {
+  list-style: none;
+  /* padding: 10px 15px; */
+  cursor: default;
+  display: flex;
+}
+
+.account-name-icon .account-menu ul li:hover {
+  background-color: #cdcdcd;
+}
+
+.account-name-icon .account-menu ul li a {
+  padding: 10px 15px;
+  width: 100%;
+  height: 100%;
+  /* background-color: #7474af; */
+}
+
+/* PROGRESS CONTAINER */
+
+.progress-bar-container {
+  /* background-color: rgb(134, 207, 207); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.progress-bar-container .steps {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar-container .steps .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30px;
+  cursor: default;
+}
+
+.progress-bar-container .steps .step .step-number {
+  /* padding: 20px; */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  /* background-color: red; */
+  color: #000000;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.progress-bar-container .steps .step .step-label {
+  font-weight: 400;
+  color: #919191;
+}
+
+.progress-bar-container .steps .step.current-step .step-number {
+  color: #fff;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.progress-bar-container .steps .step.current-step .step-label {
+  font-weight: 600;
+  color: #000000;
+}
+
+.progress-bar-container .steps .step.preview-step .step-number {
+  color: #fff;
+  --primary-color: rgb(174, 174, 174);
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.progress-bar-container .steps .step.preview-step .step-label {
+  font-weight: 600;
+  color: #919191;
+}
+
+form {
+  position: relative;
+  /* background-color: rebeccapurple; */
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+form .form-step-container {
+  width: 60%;
+  height: 90%;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+form .form-step-container .form-admin-info {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  /* background-color: rgb(255, 255, 255); */
+  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+form .form-step-container .form-admin-info .form-admin-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #919191; */
+  width: 100%;
+}
+
+form .form-step-container .form-admin-info .form-admin-name .form-input {
+  width: 49%;
+}
+
+form .form-step-container .form-admin-info .form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+}
+
+form .form-step-container .form-admin-info .form-input label {
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+form .form-step-container .form-admin-info .form-input input {
+  font-size: 1em;
+  padding: 10px 12px;
+  width: 100%;
+  outline: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+  border: none;
+  border-radius: 3px;
+  background-color: #f4f4f4;
+}
+
+form .form-step-container .form-admin-info .form-input input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form .form-step-container .form-admin-info .form-button {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: aliceblue; */
+  width: 100%;
+  margin-top: 20px;
+  /* background-color: #969696; */
+}
+
+form .form-step-container .form-admin-info .form-button input {
+  width: 50%;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+form .form-step-container .form-admin-info .form-button input:hover {
+  --primary-color: rgb(250, 142, 142);
+  background-color: var(--primary-color);
+}
+
+form .form-step-container .form-admin-avatar {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  /* background-color: rgb(255, 255, 255); */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+form .form-step-container .form-admin-avatar .avatar-preview {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* background-color: #919191; */
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+form .form-step-container .form-admin-avatar .avatar-preview label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #00000068;
+}
+
+form .form-step-container .form-admin-avatar .avatar-preview label p {
+  color: #ffffffa0;
+  font-weight: 500;
+}
+
+form .form-step-container .form-admin-avatar .avatar-preview label .fas {
+  color: #ffffff91;
+  font-size: 3em;
+}
+
+form .form-step-container .form-admin-avatar .form-input {
+  display: flex;
+}
+
+form .form-step-container .form-admin-avatar .form-button {
+  display: flex;
+  justify-content: center;
+  /* background-color: aliceblue; */
+  width: 100%;
+  margin-top: 20px;
+}
+
+form .form-step-container .form-admin-avatar .form-button input {
+  width: 33%;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: none;
+  margin: 0 5px;
+  background-color: #afafaf;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+form .form-step-container .form-admin-avatar .form-button input:hover {
+  --primary-color: rgb(250, 142, 142);
+  background-color: var(--primary-color);
+}
+
+form .form-step-container .form-admin-avatar .form-button input#next-2 {
+  background-color: #afafaf;
+  background-color: var(--primary-color);
+}
+
+form .form-step-container .form-admin-change-pass {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 5% 10%;
+  /* background-color: rgb(255, 255, 255); */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+form .form-step-container .form-admin-change-pass .form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px 0;
+}
+
+form .form-step-container .form-admin-change-pass .form-input label {
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+form .form-step-container .form-admin-change-pass .form-input input {
+  font-size: 1em;
+  padding: 10px 12px;
+  width: 100%;
+  outline: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+  border: none;
+  border-radius: 3px;
+  background-color: #f4f4f4;
+}
+
+form .form-step-container .form-admin-change-pass .form-input input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form .form-step-container .form-admin-change-pass .form-button {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: aliceblue; */
+  width: 100%;
+  margin-top: 20px;
+  /* background-color: #969696; */
+}
+
+form .form-step-container .form-admin-change-pass .form-button input {
+  width: 30%;
+  font-size: 1em;
+  padding: 10px 12px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+
+form .form-step-container .form-admin-change-pass .form-button input:hover {
+  --primary-color: rgb(250, 142, 142);
+  background-color: var(--primary-color);
+}
+
+form .form-step-container .form-admin-change-pass .form-button input#back {
+  background-color: #afafaf;
+}
+.password-wrapper {
+  position: relative;
+}
+/* .password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+} */
+.is-invalid {
+  border-color: red !important;
+}
+
+.invalid-feedback {
+  color: red;
+}
+
+/* Hide and Show Password Eye  */
+
+.password-all {
+  position: relative;
+}
+
+.password-toggle,
+.confirmpassword-toggle {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  cursor: pointer;
+}

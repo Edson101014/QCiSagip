@@ -1,0 +1,255 @@
+@import url('./main.css');
+
+
+
+/* MODAL */
+
+.adopted-view-modal{
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,.5);
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   /* display: none; */
+}
+
+
+/*  */
+.adopted-view-modal .view-appl-container{
+   width: 60%;
+   height: 90%;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   text-transform: capitalize ;
+   font-size: 1em;
+   overflow: hidden;
+   overflow-y: scroll;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 1% 2%;
+   border-radius: 10px;
+}
+
+
+.adopted-view-modal .view-appl-container .ref-no-date{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2% 3%;
+   border-bottom: .50px solid rgba(0, 0, 0, 0.5);
+   font-size: .9rem;
+ 
+}
+
+
+.adopted-view-modal .view-appl-container .adopter-details{
+   padding: 2% 3%;
+   border-bottom: .50px solid rgba(0, 0, 0, 0.5);
+   /* font-size: .9rem; */
+}
+
+
+.adopted-view-modal .view-appl-container .adopter-details h3{
+   margin-bottom: 10px;
+   font-size: 1em;
+}
+
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+   /* background-color: antiquewhite; */
+}
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section .details{
+   width: 70%;
+   height: 100%;
+   /* background-color: rgb(96, 152, 123); */
+   margin-right: 20px;
+}
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section .details .form-input-disable{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   /* background-color: aliceblue; */
+   margin: 10px 0;
+   text-transform: capitalize;
+}
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section .details .form-input-disable input:read-only{
+   font-size: 1em;
+   padding: 10px 12px;
+   width: 80%;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #cbcbcb;
+   color: #444444;
+   cursor: default;
+   text-transform: capitalize;
+}
+
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section .id-1x1{
+   width: 30%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section .id-1x1 .image{
+   width: 150px;
+   height: 150px;
+   overflow: hidden;
+   /* background-color: #cbcbcb; */
+}
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-detail-section .id-1x1 .image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.adopted-view-modal .view-appl-container .adopter-details .adopter-house h3{ 
+   color: #7e7e7e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.adopted-view-modal .view-appl-container .pet-details{
+   padding: 2% 3%;
+   border-bottom: .50px solid rgba(0, 0, 0, 0.5);
+   /* background-color: aliceblue; */
+   /* font-size: .9rem; */
+}
+
+
+.adopted-view-modal .view-appl-container .pet-details h3{
+   margin-bottom: 10px;
+   font-size: 1em;
+}
+
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 5px;
+   /* background-color: antiquewhite; */
+}
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section .details{
+   width: 70%;
+   height: 100%;
+   /* background-color: rgb(96, 152, 123); */
+   margin-right: 20px;
+}
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section .details .form-input-disable{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   /* background-color: aliceblue; */
+   margin: 10px 0;
+}
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section .details .form-input-disable input:read-only{
+   font-size: 1em;
+   padding: 10px 12px;
+   width: 75%;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #cbcbcb;
+   color: #444444;
+   cursor: default;
+   text-transform: capitalize;
+}
+
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section .pet-image{
+   width: 30%;
+   height: 100%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section .pet-image .image{
+   width: 200px;
+   height: 200px;
+   overflow: hidden;
+   border-radius: 50%;
+   /* background-color: #cbcbcb; */
+}
+
+.adopted-view-modal .view-appl-container .pet-details .pet-detail-section .pet-image .image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+
+
+.adopted-view-modal .view-appl-container .button-sched{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 3%;
+}
+
+.adopted-view-modal .view-appl-container .button-sched .date-of-interview{
+   display: flex;
+   align-items: center;
+   flex-direction: row-reverse;
+}
+
+.adopted-view-modal .view-appl-container .button-sched .date-of-interview p{
+   margin-right: 10px;
+}
+
+.adopted-view-modal .view-appl-container .button-sched .date-of-interview p span{
+
+   color: rgb(96, 199, 130);
+   font-weight: 500;
+}
+
+.adopted-view-modal .view-appl-container .button-sched .form-button-back button{
+   background-color: #a5a5a5;
+   color: #fff;
+   outline: none;
+   border: none;
+   padding: 10px 12px;
+   font-size: 1em;
+   text-transform: capitalize;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: background ease-in-out .4s;
+}
+
+.adopted-view-modal .view-appl-container .button-sched .form-button-back button:hover{
+   background-color: #8d8d8d;
+}

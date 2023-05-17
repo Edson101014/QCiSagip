@@ -1,0 +1,213 @@
+@import url('./main.css');
+
+.cnt-report{
+   flex-direction: column;
+   padding: 1% 2%;
+   
+}
+
+
+.cnt-report .cnt-report-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   height: 5%;
+   margin-bottom: 5px;
+   /* background-color: aliceblue; */
+}
+
+.cnt-report .cnt-report-header .title-text{
+   display: flex;
+   align-items: center;
+   /* justify-content: space-between; */
+   margin-bottom: 10px;
+}
+
+.cnt-report .cnt-report-header .title-text h1{
+   margin-right: 10px;
+}
+
+/* filter */
+.cnt-report .filter-generate{
+   display: flex;
+   align-items: center;
+   height: 10%;
+   position: relative;
+}
+
+.cnt-report .filter-generate .form-input{
+   margin-right: 20px;
+}
+
+.cnt-report .filter-generate .form-button{
+   position: absolute;
+   right: 0;
+}
+
+
+.cnt-report .filter-generate .form-button button{
+   background-color: #6a99de;
+   border-radius: 5em;
+   font-size: 1em;
+   padding: 5px 15px;
+   border: none;
+   color: #fff;
+   text-transform: capitalize;
+}
+
+.cnt-report .filter-generate .form-button button .fas{
+   color: #fff;
+}
+
+.cnt-report .filter-generate .form-button button:disabled{
+   background-color: #b1b1b1;
+}
+
+.cnt-report .filter-generate .form-input-button button{
+   background-color: #6a99de;
+   border-radius: 3px;
+   font-size: 1em;
+   padding: 5px 15px;
+   border: none;
+   color: #fff;
+   text-transform: capitalize;
+}
+
+.cnt-report .filter-generate .form-input-button button:disabled{
+   background-color: #acacac;
+   cursor: not-allowed;
+}
+
+.cnt-report .filter-generate .form-input select, .filter-generate .form-input input{
+   font-size: 1em;
+   padding: 5px 10px;
+   border: none;
+   border-radius: 3px;
+   text-transform: capitalize;
+}
+
+.cnt-report .filter-generate .form-input input:disabled{
+   background-color: #c3c3c3;
+}
+
+
+
+
+
+
+/* item */
+
+.cnt-report .generate-report-container{
+   width: 100%;
+   height: 85%;
+   background-color: rgb(255, 255, 255);
+   padding: 1%;
+   margin-top: 5px;
+   border-radius: 5px;
+}
+
+.cnt-report .generate-report-container .content::-webkit-scrollbar{
+   display: none;
+}
+
+
+.cnt-report .generate-report-container .content{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow-y: scroll;
+}
+
+.cnt-report .generate-report-container .content .report-message{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 2.5em;
+   width: max-content;
+   color: #e6e6e6;
+   font-weight: 500;
+}
+
+
+.cnt-report .generate-report-container .content .graphs-container{
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 70% 30%;
+   grid-gap: 5px;
+}
+
+.cnt-report .generate-report-container .content .graphs-container > div{
+   width: 100%;
+   /* background-color: red; */
+}
+
+
+.cnt-report .generate-report-container .content p{
+   text-align: center;
+   font-size: 1.2em;
+   font-weight: 600;
+   text-decoration: underline;
+   margin-bottom: 10px;
+}
+
+.cnt-report .generate-report-container .content .graphs-container > div.report-pie-chart{
+   width: 100%;
+   height: 100%;
+   
+}
+
+.cnt-report .generate-report-container .content .item-list{
+   padding: 1%;
+}
+
+.cnt-report .generate-report-container .content .item-list table{
+   border-collapse: collapse;
+   width: 100%;
+   height: max-content;
+}
+
+.cnt-report .generate-report-container .content .item-list table thead{
+   background-color: rgb(221, 221, 221);
+}
+
+.cnt-report .generate-report-container .content .item-list table thead th{
+   font-weight: 500;
+   text-transform: capitalize;
+   padding: 5px;
+}
+
+
+.cnt-report .generate-report-container .content .item-list table tbody td{
+   font-weight: 400;
+   /* text-transform: capitalize; */
+   padding: 5px;
+   text-align: center;
+}
+
+/* 
+.report-line-graph{
+   width: 100px;
+   height: 100px;
+} */
+
+
+
+.cnt-report .generate-report-container .content .content-header{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-bottom: 20px;
+}
+
+.cnt-report .generate-report-container .content .content-header .lqp-logo img, .qcvdept-logo img{
+   width: 100px;
+   height: 100px;
+}
+
+.cnt-report .generate-report-container .content .content-header .content-title{
+   text-align: center;
+}

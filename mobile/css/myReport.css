@@ -1,0 +1,75 @@
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 100%;
+}
+table thead {
+  border-top: 1px solid gray;
+}
+table thead tr th {
+  padding: 0.5rem;
+  text-align: left !important;
+  /* border: 1px solid black; */
+  font-weight: 600;
+}
+/* 
+table tbody tr:nth-child(odd) {
+  border: 1px solid rgba(0, 0, 0, 0.315);
+  background-color: #ededed;
+} */
+table tbody tr td:nth-child(1) {
+  /* background-color: rgba(235, 147, 147); */
+  color: var(--primary-blue);
+}
+table tbody tr td {
+  padding: 0.5rem;
+  text-align: left !important;
+  border: 1px solid rgba(0, 0, 0, 0.153);
+}
+table tbody tr td button {
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  font-weight: 600;
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.report-container {
+  position: relative;
+}
+.reportModalView {
+  display: none;
+  position: fixed;
+  top: 0;
+  /* left: 50%;
+  transform: translateX(-50%); */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.reportModal-container {
+  width: min(550px, 90%);
+  margin-inline: auto;
+  background-color: var(--card-color);
+  margin-top: 10rem;
+}
+.reportModal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(17, 82, 114, 100%);
+  color: white;
+  padding: 1.5rem;
+}
+.reportModalClose {
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reportModal-body {
+  background-color: var(--card-color);
+  padding: 2rem;
+}

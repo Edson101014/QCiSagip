@@ -1,0 +1,478 @@
+@import url("./main.css");
+
+header{
+   background-color: var(--primary-color);
+   height: 12vh;
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 2%;
+}
+
+header .logo-title {
+   display: flex;
+   align-items: center;
+
+}
+
+header .logo-title .logo{
+   background-color:  rgb(255, 255, 255);
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+
+header .logo-title .logo .img-handler{
+   width: 100%;
+   height: 100%;
+}
+
+
+header .logo-title .logo .img-handler img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+header .logo-title .text-header{
+   width: max-content;
+   /* min-width: 35%; 
+   max-width: 35%; */
+   height: 100%;
+   font-size: 1.3em;
+   font-weight: 600;
+   line-height: 22px;
+   /* background-color: #8f5e5e; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 10px;
+   color: var(--light-color);
+}
+
+header .logo-title .text-header span{
+   font-size: .80em;
+   font-weight: 400;
+   color: var(--light-color);
+   opacity: .6;
+}
+
+
+header .profile-account{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+}
+
+header .profile-account a{
+   padding: 6px 15px;
+   color: #fff;
+   background-color: var(--accent-color);
+   border-radius: 5em;
+   transition: all ease-in-out .2s;
+}
+
+header .profile-account a:hover{
+   background-color: var(--accent-color);
+}
+
+header .profile-account .profile{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   margin-left: 10px;
+   cursor: pointer;
+   
+}
+
+header .profile-account .profile .fas{
+   color: #fff;
+}
+
+header .profile-account .profile .img-handler{
+   margin-right: 5px;
+   width: 40px;
+   height: 40px;
+   overflow: hidden;
+   border-radius: 50%;
+   border: 2px solid #ffffff98;
+
+}
+
+header .profile-account .profile .img-handler img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+main{
+   width: 100%;
+   height: calc(100vh - 12vh);
+   background-color: #edeef3;
+   display: grid;
+   grid-template-columns: 15% 85%;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+main nav{
+   height: 100%;
+   background-color: var(--primary-color);
+}
+
+
+
+
+main nav ul li a{
+   display: flex;
+   align-items: center;
+   padding: 20px 0;
+   padding-left: 25px;
+   color: #ffffff84;
+   font-size: 1em;
+}
+
+
+
+main nav ul li a .fas{
+   color: #ffffff84;
+   margin-right: 10px;
+   font-size: .9em;
+}
+
+main nav ul li a.selected{
+   color: #ffffff;
+   border-right: 4px solid var(--accent-color);
+}
+
+main nav ul li a.selected .fas{
+   color: #ffffff;
+}
+
+main nav ul li a:hover{
+   border-right: 4px solid var(--accent-color);
+   color: #ffffff84;
+}
+
+::-webkit-scrollbar{
+   display: none;
+}
+
+main section{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   overflow-y: scroll;
+   padding: 2% 4%;
+}
+
+main section > div{
+   width: 100%;
+   height: 100%;
+}
+
+main section > div .header{
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#message{
+   position: fixed;
+   right: 0%;
+   width: max-content;
+   height: max-content;
+}
+
+
+
+
+
+/* profile */
+
+main section > div .admin-profile-container{
+   /* background-color: #ffffff; */
+}
+
+main section > div .admin-profile-container .admin-avatar{
+   margin-bottom: 20px;
+}
+
+main section > div .admin-profile-container .admin-avatar p{
+   margin-bottom: 10px; 
+   color: #000000d8;
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar{
+   position: relative;
+   width: 120px;
+   height: 120px;
+   overflow: hidden;
+   border-radius: 50%;
+   border: 4px solid rgba(254, 254, 254, 0.55);
+
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar .img-handler{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--primary-color);
+   
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar .img-handler img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+main section > div .admin-profile-container .admin-avatar .avatar .img-handler p{
+   font-size: 3.5em;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+
+main section > div .admin-profile-container .admin-avatar .avatar .form-upload{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   background-color: #00000019;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all ease-in-out .2s;
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar .form-upload:hover{
+   background-color: #00000046;
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar .form-upload label{
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;  
+   cursor: pointer;
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar .form-upload label .fas{
+   color: rgba(255, 255, 255, 0.545);
+}
+
+main section > div .admin-profile-container .admin-avatar .avatar .form-upload label:hover{
+   background-color: #00000085;
+}
+
+
+/* info */
+main section > div .admin-profile-container .admin-info{
+   margin-bottom: 20px;
+}
+
+main section > div .admin-profile-container .admin-info p{
+   margin-bottom: 10px;
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs{
+   display: grid;
+   grid-template-columns: 30% 30%;
+   grid-gap: 20px;
+}
+
+
+main section > div .admin-profile-container .admin-info .form-inputs > div{
+   display: flex;
+   flex-direction: column;
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs > div label{
+   font-size: .9em;
+   color: #0000008f;
+   margin-bottom: 5px;
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs > div input{
+   padding: 10px 12px;
+   font-size: 1em;
+   width: 100%;
+   outline: none;
+   border: 1px solid rgba(0, 0, 0, 0.361);
+   border-radius: 4px;
+   color: rgb(59, 59, 59);
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs > div input:focus{
+   border-color: var(--primary-color);
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs > div input:read-only{
+   background-color: #e6e6e6;
+   color: #0000006f;
+   cursor: default;
+   border: .5px solid rgba(0, 0, 0, 0.279);
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs.address{
+   grid-template-columns: calc(60% + 20px) ;
+   margin-top: 20px;
+   /* background-color: red; */
+}
+
+main section > div .admin-profile-container .admin-info .form-inputs.address input{
+   width: 100%;
+}
+
+
+main section > div .admin-profile-container .admin-info .form-button{
+   margin-top: 20px;
+   border-top: 1px solid rgba(0, 0, 0, 0.348);
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 2% 0;
+}
+
+main section > div .admin-profile-container .admin-info .form-button button{
+   padding: 10px 20px;
+   color: #fff;
+   border: none;
+   font-size: 1em;
+   background-color: var(--primary-color);
+   border-radius: 4px;
+}
+
+
+
+
+
+
+
+/* password */
+main section > div .admin-password-container .admin-info{
+   margin-bottom: 20px;
+}
+
+main section > div .admin-password-container .admin-info p{
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+main section > div .admin-password-container .admin-info p span{
+   font-size: .9em;
+   color: rgba(0, 0, 0, 0.618);
+}
+
+main section > div .admin-password-container .admin-info .form-inputs{
+   display: grid;
+   grid-template-columns: 60%;
+   
+}
+
+
+main section > div .admin-password-container .admin-info .form-inputs > div{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+main section > div .admin-password-container .admin-info .form-inputs > div label{
+   font-size: .9em;
+   color: #0000008f;
+   margin-bottom: 5px;
+}
+
+main section > div .admin-password-container .admin-info .form-inputs > div input{
+   padding: 10px 12px;
+   font-size: 1em;
+   width: 100%;
+   outline: none;
+   border: 1px solid rgba(0, 0, 0, 0.361);
+   border-radius: 4px;
+   color: rgb(59, 59, 59);
+}
+
+main section > div .admin-password-container .admin-info .form-inputs > div input:focus{
+   border-color: var(--primary-color);
+}
+
+main section > div .admin-password-container .admin-info .form-button{
+   margin-top: 20px;
+   border-top: 1px solid rgba(0, 0, 0, 0.348);
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 2% 0;
+}
+
+main section > div .admin-password-container .admin-info .form-button button{
+   padding: 10px 20px;
+   color: #fff;
+   border: none;
+   font-size: 1em;
+   background-color: var(--primary-color);
+   border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+/* my account */
+
+section .my-acc-container table{
+   border-collapse: collapse;
+   width: 100%;
+   margin-top: 20px;
+}
+section .my-acc-container table thead tr{
+   border-bottom: 1px solid rgba(0, 0, 0, 0.502);
+   background-color: var(--primary-color);
+   color: #fff;
+}
+section .my-acc-container table thead th{
+   padding: 10px;
+   text-transform: capitalize;
+   text-align: left;
+   font-weight: 500;
+}
+
+section .my-acc-container table thead th:last-child{
+   text-align: right;
+}
+
+section .my-acc-container table tbody tr:hover{
+   background-color: #00000010;
+}
+
+section .my-acc-container table tbody td{
+   padding: 10px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.196);
+}
+
+section .my-acc-container table tbody td:last-child{
+   text-align: right;
+   border-left: 1px solid rgba(0, 0, 0, 0.502);
+}

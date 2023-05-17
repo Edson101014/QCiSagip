@@ -1,0 +1,135 @@
+@import url('./main.css');
+
+
+.service-add-services{
+   flex-direction: column;
+   padding: 1% 2%;
+}
+
+
+.service-add-services .services-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   /* margin: 0 10px; */
+   /* background-color: aliceblue; */
+}
+
+.service-add-services .services-header .title-text{
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid black;
+   
+   /* background-color: antiquewhite; */
+}
+
+.service-add-services .services-header .title-text h1{
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+.se-add-container{
+   width: 100%;
+   height: 100%;
+   /* background-color: antiquewhite; */
+}
+
+.se-add-container form{
+   display: flex;
+   flex-direction: column;
+}
+
+.se-add-container form .form-text{
+   width: 100%;
+   /* background-color: aqua; */
+   display: flex;
+   flex-direction: column;
+   margin: 10px 0;
+}
+
+.se-add-container form .form-text label{
+   font-size: 1em;
+   margin-bottom: 10px;
+   /* letter-spacing: 1px; */
+}
+
+.se-add-container form .form-text input[type="text"] {
+   font-size: 1em;
+   padding: 10px 12px;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #f4f4f4;
+}
+
+.se-add-container form .form-text input[type="text"]:focus{
+   border:1px solid var(--primary-color);
+}
+
+
+.se-add-container form .form-desc-fe{
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 250px;
+   padding-bottom: 1%;
+}
+
+.se-add-container form .form-desc-fe .form-text{
+   margin-right: 20px;
+}
+
+.se-add-container form .form-desc-fe .form-text textarea {
+   font-size: 1em;
+   padding: 10px 12px;
+   outline: none;
+   /* border: 1px solid rgba(0, 0, 0, 0.492);   */
+   border: none;
+   border-radius: 3px;
+   background-color: #f4f4f4;
+   width: 100%;
+   height: 100%;
+}
+
+.se-add-container form .form-desc-fe .form-text textarea:focus{
+   border:1px solid var(--primary-color);
+}
+
+.se-add-container form .form-desc-fe .form-img{
+   width: 40%;
+}
+
+
+.se-add-container form .form-button{
+   display: flex;
+   justify-content: flex-start;
+   border-top: 1px solid rgb(122, 122, 122);
+   padding: 1% 0;
+}
+
+
+.se-add-container form .form-button button, .form-button input[type="submit"]{
+   font-size: 1em;
+   padding: 6px 12px;
+   border: none;
+   margin-right: 5px;
+   border-radius: 3px;
+   color: #fff;
+   background-color: #bebebe;
+}
+
+.se-add-container form .form-button input[type="submit"]{
+   background-color: var(--primary-color);
+}
+
+
+
+
+
+
+
