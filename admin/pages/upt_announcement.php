@@ -57,7 +57,7 @@
           const uploadsizeFeedback = document.getElementById('uploadsize-feedback');
           
           const nextBtn = document.getElementById('cms_announcement_btn_submit');
-          
+const allowedExtensions = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
           picFileInput.addEventListener('change', handleFileInputChange);
          
           picRemoveButton.addEventListener('click', handleRemoveButtonClick);
@@ -67,9 +67,10 @@
     const fileInput = event.target;
     const file = fileInput.files[0]?.size;
     const fileName = fileInput.files[0]?.name;
+    const filePath = fileInput.value;
     const fileSizeInMB = file / (1024 * 1024);
     const label = document.getElementById('picChosen');
-    
+
     const labelsize = document.getElementById('sizepicChosen');
     
     const removeButton = picRemoveButton;
@@ -90,11 +91,15 @@
 
     if (picFileInput.files[0]) {
       // check if any picture is larger than 5MB
-      if (picFileInput.files[0].size <= 5242880) {
+      if (picFileInput.files[0].size <= 5242880 && allowedExtensions.exec(filePath)){
         nextBtn.disabled = false;
         missingFeedback.textContent = '';
         uploadsizeFeedback.textContent = '';
-      } else {
+      } else if (!allowedExtensions.exec(filePath)) {
+          nextBtn.disabled = true;
+          missingFeedback.textContent = 'format should picture.';
+          uploadsizeFeedback.textContent = '';
+      }else {
         nextBtn.disabled = true;
         missingFeedback.textContent = '';
         uploadsizeFeedback.textContent = 'Pictures should be less than 5 MB.';

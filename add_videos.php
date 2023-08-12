@@ -5,8 +5,8 @@ ini_set('post_max_size', '50M');
 
 include "./db/db_con.php";
 
-// Check if the form has been submitted
-if (isset($_POST['cms_announcement_btn_submit'])) {
+// // Check if the form has been submitted
+// if (isset($_POST['cms_announcement_btn_submit'])) {
 
     // Get the title and video file from the form
     $content_id = strtoupper(substr(uniqid(), 0, 13) . bin2hex(random_bytes(1)));
@@ -48,7 +48,9 @@ if (isset($_POST['cms_announcement_btn_submit'])) {
     } else {
         echo "Error uploading video file.";
     }
-}
+// } else {
+//     echo "something's error";
+// }
 
 // Close the database connection
 mysqli_close($conn);

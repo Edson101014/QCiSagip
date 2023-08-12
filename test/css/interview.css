@@ -1,0 +1,288 @@
+@import url('./main.css');
+
+
+.f-int{
+   flex-direction: column;
+   /* justify-content: space-between; */
+   /* background-color: var(--primary-color); */
+   padding: 1% 2%;
+}
+
+.f-int .f-ints-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   /* background-color: aliceblue; */
+}
+
+.f-int .f-ints-header .title-text{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.f-int .f-ints-header .title-text h1{
+   margin-right: 10px;
+}
+
+.f-int .f-ints-header .filter-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 148, 148); */
+   padding: .5% 0%;
+   border-radius: 6px;
+
+}
+
+.f-int .f-ints-header .filter-box .filter{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 119, 119); */
+   width: 60%;
+   height: 100%;
+}
+
+.f-int .f-ints-header .filter-box .filter .search{
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 70%;
+   height: 100%;
+   border: 1px solid var(--dark-color);
+   border-radius: 6px;
+   margin-right: 10px;
+   /* background-color:aquamarine; */
+}
+
+
+.f-int .f-ints-header .filter-box .filter .search .fa{
+   color: var(--secondary-text);
+   position: absolute;
+   margin-left: 2.5%;
+}
+
+.f-int .f-ints-header .filter-box .filter .search input[type="search"]{
+   width: 100%;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   padding-left: 40px;
+   border: none;
+   background: none;
+   border-radius: 6px;
+   /* margin-left: 10px; */
+}
+
+
+
+
+.f-int .f-ints-header .filter .sort-by{
+   display: flex;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+   /* background-color: aqua; */
+}
+
+.f-int .f-ints-header .filter .sort-by p{
+   width: max-content;
+   margin-right: 10px;
+}
+
+
+.f-int .f-ints-header .filter .sort-by select{
+   width: max-content;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   border-radius: 6px;
+   border: 1px solid var(--dark-color);
+}
+
+.f-int .f-int-item-container{
+   /* background-color: rgb(192, 159, 159); */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   /* padding: 1%; */
+   margin-top: 10px;
+   /* border-radius: 6px; */
+   height: 100%;
+   
+}
+
+
+.f-int .f-int-item-container .f-int-table{
+   width: 100%;
+   height: 100%;
+   /* background-color: rgb(253, 253, 253); */
+   border-radius: 6px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.f-int .f-int-item-container .f-int-table .col-name{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 8%;
+   /* background-color: aliceblue; */
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+   margin-bottom: 1%;
+}
+
+.f-int .f-int-item-container .f-int-table .col-name > div{
+   padding: 5px;
+   height: 100%;
+   /* background-color: antiquewhite; */
+   /* border: 1px solid red; */
+   display: flex;
+   align-items: center;
+   
+}
+
+
+.f-int .f-int-item-container .f-int-table .row-item .row-f-int > div{
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   font-size: .95em;
+   /* border: 1px solid red; */
+}
+
+
+.f-int-num{
+   width: 2%;
+   justify-content: center;
+   /* padding: 5px 0; */
+}
+
+.row-f-int .f-int-id{
+   background-color: var(--primary-color);
+   color: #fff;
+}
+
+.f-int-id{
+   width: 15%;
+   justify-content: center;
+  
+}
+
+.f-int-name {
+   width: 25%;
+   /* margin-left: 20px; */
+   /* background-color: antiquewhite; */
+}
+
+.row-f-int .f-int-name .f-int-profile{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 10px;
+}
+
+.row-f-int .f-int-name .f-int-profile img{
+   width: 100%;
+}
+
+.f-int-pet-id {
+   width: 10%;
+}
+
+.f-int-pet-name {
+   width: 10%;
+}
+
+.f-int-date-interview {
+   width: 20%;
+   justify-content: center;
+}
+
+.f-int-date-interview input{
+   padding: 3px 10px;
+   font-size: 1em;
+   outline: none;
+   border: 1px solid black;
+   background-color: #fff;
+   /* background-color: antiquewhite; */
+}
+
+.f-int-status {
+   width: 15%;
+   justify-content: center;
+}
+
+
+.f-int .f-int-item-container .f-int-table .row-item{
+   width: 100%;
+   height: max-content;
+   margin-bottom: 10px;
+   /* overflow: hidden; */
+   max-height: 80%;
+}
+
+.f-int .f-int-item-container .f-int-table .row-item .row-f-int{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2.5px;
+   border-radius: 3px;
+   border: 1px solid rgba(0, 0, 0, 0.26);
+   background-color: rgb(251, 253, 253) ;
+   /* margin: 5px 0; */
+}
+
+.f-int .f-int-item-container .f-int-table .row-item .row-f-int:last-child{
+   margin-bottom: 0px;
+}
+
+
+.f-int-action{
+   width: 10%;
+   justify-content: center;
+   /* background-color: antiquewhite; */
+}
+
+.row-item .f-int-action .edit-icon{
+   background-color: rgb(82, 112, 177); 
+   padding: 5px 10px;
+   width: max-content;
+   display: flex;
+   align-items: center;
+   /* justify-content: space-around; */
+   color: #fff;
+   border-radius: 3px;
+}
+
+.row-item .f-int-action .edit-icon .fas{
+   color: #fff;
+   margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+.f-int .f-int-item-container .f-int-table .numbering-item{
+   width: 100%;
+   height: 10%;
+   background-color: rgb(255, 255, 255);
+   border-radius: 3px;
+}
+

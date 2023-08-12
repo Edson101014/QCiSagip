@@ -57,7 +57,7 @@
           const uploadsizeFeedback = document.getElementById('uploadsize-feedbackfile');
           
           const nextBtn = document.getElementById('cms_video_btn_submit');
-          
+          const allowedExtensionsFile = /(\.mp4|\.mov|\.avi|\.mkv)$/i;
           picFileInput.addEventListener('change', handleFileInputChange);
          
           picRemoveButton.addEventListener('click', handleRemoveButtonClick);
@@ -68,6 +68,7 @@
     const fileInput = event.target;
     const file = fileInput.files[0]?.size;
     const fileName = fileInput.files[0]?.name;
+    const filePathFile = fileInput.value;
     const fileSizeInMB = file / (1024 * 1024);
     const label = document.getElementById('fileChosen');
     
@@ -91,18 +92,23 @@
 
     if (picFileInput.files[0]) {
       // check if any picture is larger than 5MB
-      if (picFileInput.files[0].size <= 26214400) {
+      if (picFileInput.files[0].size <= 26214400 && allowedExtensionsFile.exec(filePathFile)) {
         nextBtn.disabled = false;
         missingFeedback.textContent = '';
         uploadsizeFeedback.textContent = '';
-      } else {
-        nextBtn.disabled = true;
-        missingFeedback.textContent = '';
-        uploadsizeFeedback.textContent = 'Video should be less than 25 MB.';
+      } else if (!allowedExtensionsFile.exec(filePathFile)) {
+          nextBtn.disabled = true;
+        missingFeedback.textContent = 'format should mp4, mkv.';
+        uploadsizeFeedback.textContent = '';
+      }else{
+          nextBtn.disabled = true;
+          missingFeedback.textContent = '';
+          uploadsizeFeedback.textContent = 'Video should less than 25 MB.';
+          
       }
     } else {
       nextBtn.disabled = true;
-      missingFeedback.textContent = 'Please upload picture files.';
+      missingFeedback.textContent = 'Please upload video files.';
       uploadsizeFeedback.textContent = 'Video should be less than 25 MB.';
     }
 
@@ -135,25 +141,29 @@
   }
           
            $('#form-video').submit(function(e){
-        e.preventDefault();
-        if (!$('#video-title').hasClass('is-invalid') && picFileInput.files[0]) {
-        event.preventDefault();
-        $('#missing-feedbackfile').html('')
-        $("#cms_video_btn_submit").prop("disabled", true);
-  
-      
-         setTimeout(function() {
-         $("#cms_video_btn_submit").prop("disabled", false);
-         }, 7000); 
-         
-         
-         this.submit();
-
-     
-        } else {
-        event.preventDefault();
-        $('#missing-feedbackfile').html('Please fillup all requirement.');
-        }
+                e.preventDefault();
+                
+                
+                if (!$('#video-title').hasClass('is-invalid') && picFileInput.files[0]) {
+                event.preventDefault();
+                
+                
+                $('#missing-feedbackfile').html('')
+                $("#cms_video_btn_submit").prop("disabled", true);
+          
+              
+                 setTimeout(function() {
+                 $("#cms_video_btn_submit").prop("disabled", false);
+                 }, 7000); 
+                 
+                 
+                 this.submit();
+        
+             
+                } else {
+                event.preventDefault();
+                $('#missing-feedbackfile').html('Please fillup all requirement.');
+                }
 
            
             

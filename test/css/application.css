@@ -1,0 +1,102 @@
+@import url('./main.css');
+
+
+.cnt-applications{
+   padding: 1%;
+}
+
+
+.appl-content-container{
+   width: 100%;
+   height: 100%;
+   /* background-color: red; */
+   display: flex;
+}
+
+.appl-content-container .appl-sub-menu{
+   width: 15%;
+   height: 100%;
+   background-color: rgb(255, 255, 255);
+   margin-right: 10px;
+   /* padding: 10px; */
+}
+
+.appl-sub-menu h3{
+   /* background-color: antiquewhite; */
+   font-size: 1em;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   /* text-align: center; */
+   padding: 10px 20px;
+}
+
+.appl-sub-menu ul li{
+   list-style-type: none;
+   /* background-color: antiquewhite; */
+   /* margin: 2px 0; */
+   /* border-top: 1px solid rgba(0, 0, 0, 0.24); */
+   border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.appl-sub-menu ul li:first-child{
+   border-top: 1px solid rgba(0, 0, 0, 0.137);;
+}
+
+.appl-sub-menu ul li .sub-link{
+   /* background-color: aquamarine; */
+   padding: 10px 20px;
+   font-size: .90em;
+   display: flex;
+   justify-content: space-between;
+   /* flex-direction: row-reverse; */
+   cursor: default;
+   color: rgb(88, 88, 88);
+   letter-spacing: .5px;
+   /* background-color: aqua; */
+}
+.appl-archive{
+   display: flex;
+}
+.appl-archive p{
+   /* background-color: azure; */
+   width: max-content;
+}
+
+.appl-sub-menu ul li .appl-selected{
+   background-color:var(--primary-color);
+   color: #fff;
+}
+
+.appl-sub-menu ul li .appl-selected .fas{
+   color: #fff;
+}
+
+/* .appl-sub-menu ul li .sub-link .fas{
+   margin-right: 10px;
+} */
+
+.appl-content-container .appl-main-container{
+   width: 90%;
+   height: 100%;
+   background-color: rgb(255, 255, 255);
+   /* padding: 1%; */
+}
+
+
+
+
+
+
+
+/* APPLICANTS */
+
+.sub-application{
+   width: 100%;
+   height: 100%;
+   /* background-color: aliceblue; */
+   display: none;
+}
+
+.sub-display{
+   display: flex;
+}

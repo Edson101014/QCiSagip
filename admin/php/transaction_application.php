@@ -15,7 +15,7 @@
          <th> name </th>
          <th> pet name </th>
          <th> pet type </th>
-         <th> date of application </th>
+         <!--<th> date of application </th>-->
          <!--<th style="text-align:center"> status </th>-->
          <th> Schedule for CI </th>
          <th> action </th>
@@ -43,7 +43,7 @@
 
                   <td> <?=$transaction_appl['pet_species']?> </td>
 
-                  <td style="font-size: .9em"> <?=$transaction_appl['datetime']?> </td>
+                  <!--<td style="font-size: .9em"> <?=$transaction_appl['datetime']?> </td>-->
 
                   <!--<td style="text-align:center"> <?=$transaction_appl['status']?> </td>-->
 

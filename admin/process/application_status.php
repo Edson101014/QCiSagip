@@ -513,10 +513,10 @@ $dompdf->setPaper('LEGAL', 'portrait');
                     // $ci_sql = "INSERT INTO ci (reference_no, fullname, ci_status, schedule) VALUES ('$ref_no', '$fullname', '$ci_status', '$date_formatted')";
                     // $conn->query($ci_sql);
                     
-                    $ci_sql_1 = "INSERT INTO ci (reference_no, fullname, ci_status, schedule) VALUES ('$ref_no', '$fullname', '$ci_status', '$date_formatted')";
+                    $ci_sql_1 = "INSERT INTO ci (reference_no, fullname, ci_status, schedule, datetime) VALUES ('$ref_no', '$fullname', '$ci_status', '$date_formatted', NOW())";
                     $conn->query($ci_sql_1);
 
-                    $ci_sql_2 = "INSERT INTO ci_revisit (reference_no, fullname, ci_rev_status, remarks, schedule) VALUES ('$ref_no', '$fullname', '$rev_status', '$rev_remarks', '$date_formatted')";
+                    $ci_sql_2 = "INSERT INTO ci_revisit (reference_no, fullname, ci_rev_status, remarks, schedule, datetime) VALUES ('$ref_no', '$fullname', '$rev_status', '$rev_remarks', '$date_formatted', NOW())";
                     $conn->query($ci_sql_2);
                     
                     // Render HTML as PDF

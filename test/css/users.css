@@ -1,0 +1,245 @@
+@import url('./main.css');
+
+.cnt-users{
+   flex-direction: column;
+   padding: 1% 2%;
+}
+
+.cnt-users .users-header{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: max-content;
+   width: 100%;
+   /* background-color: aliceblue; */
+}
+
+.cnt-users .users-header .title-text{
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.cnt-users .users-header .title-text h1{
+   margin-right: 10px;
+}
+
+.cnt-users .users-header .filter-box{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #fff;
+   padding: .5% 1%;
+   border-radius: 6px;
+
+}
+
+.cnt-users .users-header .filter-box .filter{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   /* background-color: rgb(180, 119, 119); */
+   width: 60%;
+   height: 100%;
+}
+
+.cnt-users .users-header .filter-box .filter .search{
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 70%;
+   height: 100%;
+   border: 1px solid var(--dark-color);
+   border-radius: 6px;
+   margin-right: 10px;
+   /* background-color:aquamarine; */
+}
+
+
+.cnt-users .users-header .filter-box .filter .search .fa{
+   color: var(--secondary-text);
+   position: absolute;
+   margin-left: 2.5%;
+}
+
+.cnt-users .users-header .filter-box .filter .search input[type="search"]{
+   width: 100%;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   padding-left: 40px;
+   border: none;
+   background: none;
+   border-radius: 6px;
+   /* margin-left: 10px; */
+}
+
+
+
+
+.cnt-users .users-header .filter .sort-by{
+   display: flex;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+   /* background-color: aqua; */
+}
+
+.cnt-users .users-header .filter .sort-by p{
+   width: max-content;
+   margin-right: 10px;
+}
+
+
+.cnt-users .users-header .filter .sort-by select{
+   width: max-content;
+   height: 100%;
+   font-size: 1em;
+   outline: none;
+   padding: 5px;
+   border-radius: 6px;
+   border: 1px solid var(--dark-color);
+}
+
+.cnt-users .user-item-container{
+   /* background-color: rgb(192, 159, 159); */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+   /* padding: 1%; */
+   margin-top: 10px;
+   /* border-radius: 6px; */
+   height: 100%;
+   
+}
+
+
+.cnt-users .user-item-container .user-table{
+   width: 100%;
+   height: 100%;
+   /* background-color: rgb(253, 253, 253); */
+   border-radius: 6px;
+   margin-bottom: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.cnt-users .user-item-container .user-table .col-name{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: 8%;
+   /* background-color: aliceblue; */
+   border-bottom: 1px solid black;
+   border-top: 1px solid black;
+   margin-bottom: 1%;
+}
+
+.cnt-users .user-item-container .user-table .col-name > div{
+   padding: 5px;
+   height: 100%;
+   /* background-color: antiquewhite; */
+   /* border: 1px solid red; */
+   display: flex;
+   align-items: center;
+   
+}
+
+
+.cnt-users .user-item-container .user-table .row-item .row-user > div{
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   font-size: .95em;
+   /* border: 1px solid red; */
+}
+
+
+.num{
+   width: 2%;
+   justify-content: center;
+   /* padding: 5px 0; */
+}
+
+.row-user .user-id{
+   background-color: var(--primary-color);
+   color: #fff;
+}
+
+.user-id{
+   width: 8%;
+   justify-content: center;
+  
+}
+
+.user-name {
+   width: 25%;
+   margin-left: 20px;
+}
+
+.row-user .user-name .user-profile{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 22px;
+   height: 22px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 10px;
+}
+
+.row-user .user-name .user-profile img{
+   width: 100%;
+}
+
+.user-email {
+   width: 30%;
+}
+
+.user-status {
+   width: 15%;
+}
+
+.user-date-joined {
+   width: 20%;
+   justify-content: flex-end;
+}
+
+
+.cnt-users .user-item-container .user-table .row-item{
+   width: 100%;
+   height: max-content;
+   margin-bottom: 10px;
+   /* overflow: hidden; */
+   max-height: 80%;
+}
+
+.cnt-users .user-item-container .user-table .row-item .row-user{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2.5px;
+   border-radius: 3px;
+   border: 1px solid rgba(0, 0, 0, 0.26);
+   background-color: rgb(251, 253, 253) ;
+   /* margin: 5px 0; */
+}
+
+.cnt-users .user-item-container .user-table .row-item .row-user:last-child{
+   margin-bottom: 0px;
+}
+
+
+
+
+
+
+
+.cnt-users .user-item-container .user-table .numbering-item{
+   width: 100%;
+   height: 10%;
+   background-color: rgb(255, 255, 255);
+   border-radius: 3px;
+}
